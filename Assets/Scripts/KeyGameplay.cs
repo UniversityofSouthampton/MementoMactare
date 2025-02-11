@@ -6,6 +6,8 @@ public class KeyGameplay : MonoBehaviour
     public string sequence;
     public int currentKeyId = 0;
 
+    public float memorisationTime;
+
     public GameObject keyPrefab;
 
     public bool recallPhase;
@@ -20,7 +22,7 @@ public class KeyGameplay : MonoBehaviour
         }
         
         //After all objects are created, start timer
-        Invoke("HideKeys", 3);
+        Invoke("HideKeys", memorisationTime);
     }
 
     void SpawnKeyObject(string key)

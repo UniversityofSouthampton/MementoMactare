@@ -878,7 +878,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sequence: ASDFG
+  currentKeyId: 0
+  memorisationTime: 1
   keyPrefab: {fileID: 5760362979291603979, guid: 92458b3f34e1739429a937bec25b311d, type: 3}
+  recallPhase: 0
 --- !u!114 &1733571046
 MonoBehaviour:
   m_ObjectHideFlags: 0
