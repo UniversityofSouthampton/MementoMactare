@@ -877,9 +877,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24cb8f4fc6d85f34482e9f986a80ef5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sequence: ASDFG
+  sequence: ILMYHU
   currentKeyId: 0
-  memorisationTime: 1
+  memorisationTime: 3
   keyPrefab: {fileID: 5760362979291603979, guid: 92458b3f34e1739429a937bec25b311d, type: 3}
   recallPhase: 0
 --- !u!114 &1733571046
