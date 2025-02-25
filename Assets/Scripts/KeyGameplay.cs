@@ -95,6 +95,7 @@ public class KeyGameplay : MonoBehaviour
                     {
                         Debug.Log("Completed Sequence");
                         recallPhase = false;
+                        PlayerManager.instance.playerLocomotionManager.canMove = true; //temporary i think? -JR
                         
                         //Set to green
                         //For each child of the KeyContainer object
@@ -126,6 +127,7 @@ public class KeyGameplay : MonoBehaviour
         else
         {
             Debug.Log("ALL SEQUENCES COMPLETE");
+            PlayerManager.instance.playerLocomotionManager.canMove = true;
         }
     }
 }
