@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Punch
   m_EditorClassIdentifier: 
   sequence: ILM
+  attacks: 00000000

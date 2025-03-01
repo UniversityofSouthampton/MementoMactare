@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Chop
   m_EditorClassIdentifier: 
   sequence: XQZ
+  attacks: 02000000

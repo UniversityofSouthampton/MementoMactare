@@ -6,6 +6,7 @@ public class PlayerManager : MonoBehaviour
 
     [HideInInspector] public PlayerInputManager playerInputManager;
     [HideInInspector] public PlayerLocomotionManager playerLocomotionManager;
+    [HideInInspector] public PlayerAnimatorManager playerAnimatorManager;
 
     private void Awake()
     {
@@ -22,6 +23,7 @@ public class PlayerManager : MonoBehaviour
     {
         playerInputManager = GetComponent<PlayerInputManager>();
         playerLocomotionManager = GetComponent<PlayerLocomotionManager>();
+        playerAnimatorManager = GetComponent<PlayerAnimatorManager>();
 
         DontDestroyOnLoad(gameObject);
     }

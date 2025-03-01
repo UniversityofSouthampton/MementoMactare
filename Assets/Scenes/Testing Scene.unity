@@ -855,10 +855,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f1fcb2f3569edf444b59ed83c2340ea1, type: 2}
   - {fileID: 11400000, guid: 5df3e1a9c751bb746aef9412ca2e90dd, type: 2}
   currentKeyId: 0
-  memorisationTime: 3
-  keyPrefab: {fileID: 5760362979291603979, guid: 92458b3f34e1739429a937bec25b311d, type: 3}
-  recallPhase: 0
   keyContainer: {fileID: 440461027}
+  keyPrefab: {fileID: 5760362979291603979, guid: 92458b3f34e1739429a937bec25b311d, type: 3}
+  attackIndex: 0
+  memorisationTime: 3
+  recallPhase: 0
 --- !u!4 &874553961
 Transform:
   m_ObjectHideFlags: 0
@@ -1038,6 +1039,7 @@ GameObject:
   - component: {fileID: 1613093922}
   - component: {fileID: 1613093921}
   - component: {fileID: 1613093929}
+  - component: {fileID: 1613093930}
   m_Layer: 0
   m_Name: Prototype Player
   m_TagString: Untagged
@@ -1089,6 +1091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInputManager: {fileID: 0}
   playerLocomotionManager: {fileID: 0}
+  playerAnimatorManager: {fileID: 0}
 --- !u!61 &1613093925
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1254,6 +1257,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1613093930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613093920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc26ac713ebb981479e14ff5b8b37724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1627343802
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Kick
   m_EditorClassIdentifier: 
   sequence: YHU
+  attacks: 01000000
