@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 954ab2f779e352f46abec2ecb4ba2c16
+guid: cddd17047a454e34e852816e5d0a71eb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7241952326185418393
-    second: courtyard boss 1_0
+      213: -3083583349700297863
+    second: xiang knee_0
+  - first:
+      213: 7156535342402878303
+    second: xiang knee_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,10 +75,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: courtyard boss 1_0
+      name: xiang knee_0
       rect:
         serializedVersion: 2
-        x: 517
-        y: 36
-        width: 1350
-        height: 2127
+        x: 537
+        y: 1654
+        width: 45
+        height: 346
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 99e789a6545908460800000000000000
-      internalID: 7241952326185418393
+      spriteID: 97bfdcde749e435d0800000000000000
+      internalID: -3083583349700297863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xiang knee_1
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 47
+        width: 1250
+        height: 2172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5bb37a1afe115360800000000000000
+      internalID: 7156535342402878303
       vertices: []
       indices: 
       edges: []
@@ -138,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -147,8 +172,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      courtyard boss 1_0: 7241952326185418393
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
