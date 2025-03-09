@@ -1,16 +1,16 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SequenceTrigger : MonoBehaviour
 {
     public KeyGameplay keyGameplayScript;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Update is called once per frame
     void Start()
     {
-        
+        keyGameplayScript = KeyGameplay.instance.GetComponent<KeyGameplay>();
     }
-
-    // Update is called once per frame
     void Update()
     {
         

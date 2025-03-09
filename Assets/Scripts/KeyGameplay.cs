@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -5,6 +6,7 @@ using UnityEngine.UI;
 
 public class KeyGameplay : MonoBehaviour
 {
+    public static KeyGameplay instance;
     [Header("Fields")]
     private string currentSequence;
     public List<Attack> attackSequence;
@@ -19,7 +21,12 @@ public class KeyGameplay : MonoBehaviour
 
     [Header("Debug")]
     public bool recallPhase;
-    
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -103,10 +110,12 @@ public class KeyGameplay : MonoBehaviour
                     {
                         PerformAttackAnimation();
                         PerformEnemyReaction();
+                        attackIndex += 1;
                     }
                     if (currentKeyId == currentSequence.Length)
                     {
                         Debug.Log("Completed Sequence");
+                        PlayerManager.instance.enemyAnimator.SetBool("Defeated",true);
                         recallPhase = false;
                         PlayerManager.instance.playerLocomotionManager.canMove = true; //temporary i think? -JR
                         attackIndex = 0;
@@ -134,13 +143,13 @@ public class KeyGameplay : MonoBehaviour
     {
         string attackToPerform = attackSequence[currentAttackId].attacks[attackIndex].ToString();
         PlayerManager.instance.playerAnimatorManager.PlayAttackAnimation(attackToPerform);
-        attackIndex += 1;
+     
     }
     private void PerformEnemyReaction()
     {
         string attackToPerform = attackSequence[currentAttackId].reactions[attackIndex].ToString();
         PlayerManager.instance.enemyAnimator.Play(attackToPerform);
-        attackIndex += 1;
+  
     }
     public void NextSequence()
     {
