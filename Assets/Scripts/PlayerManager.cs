@@ -3,6 +3,8 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager instance;
+    public GameObject currentEnemy;
+    public Animator enemyAnimator;
 
     [HideInInspector] public PlayerInputManager playerInputManager;
     [HideInInspector] public PlayerLocomotionManager playerLocomotionManager;

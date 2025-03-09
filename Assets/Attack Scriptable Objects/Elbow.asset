@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sequence: KOP
   attacks: 00000000
+  reactions: 01000000

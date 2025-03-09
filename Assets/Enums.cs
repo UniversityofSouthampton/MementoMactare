@@ -14,3 +14,9 @@ public enum Attacks
     Elbow,
     Palm,
 }
+
+public enum AttackReactions
+{
+    Low,
+    High,
+}

@@ -102,6 +102,7 @@ public class KeyGameplay : MonoBehaviour
                     if (currentKeyId % 3 == 0)
                     {
                         PerformAttackAnimation();
+                        PerformEnemyReaction();
                     }
                     if (currentKeyId == currentSequence.Length)
                     {
@@ -133,6 +134,12 @@ public class KeyGameplay : MonoBehaviour
     {
         string attackToPerform = attackSequence[currentAttackId].attacks[attackIndex].ToString();
         PlayerManager.instance.playerAnimatorManager.PlayAttackAnimation(attackToPerform);
+        attackIndex += 1;
+    }
+    private void PerformEnemyReaction()
+    {
+        string attackToPerform = attackSequence[currentAttackId].reactions[attackIndex].ToString();
+        PlayerManager.instance.enemyAnimator.Play(attackToPerform);
         attackIndex += 1;
     }
     public void NextSequence()

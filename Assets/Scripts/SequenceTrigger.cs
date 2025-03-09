@@ -24,6 +24,8 @@ public class SequenceTrigger : MonoBehaviour
             //start next sequence
             keyGameplayScript.NextSequence();
             PlayerManager.instance.playerLocomotionManager.canMove = false;
+            PlayerManager.instance.currentEnemy = gameObject;
+            PlayerManager.instance.enemyAnimator = gameObject.GetComponent<Animator>();
         }
     }
 }

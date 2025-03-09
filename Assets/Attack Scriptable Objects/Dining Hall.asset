@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sequence: XQZYHUTREILM
   attacks: 02000000010000000300000000000000
+  reactions: 01000000000000000100000001000000
