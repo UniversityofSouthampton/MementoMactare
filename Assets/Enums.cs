@@ -10,4 +10,7 @@ public enum Attacks
     Punch,
     Kick,
     Chop,
+    Knee,
+    Elbow,
+    Palm,
 }

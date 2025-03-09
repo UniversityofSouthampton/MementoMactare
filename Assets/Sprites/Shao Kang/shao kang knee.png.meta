@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3aa5359c6fd70b7438603ba3d6042939
+guid: a2aab820eae68b74889e37250ca96502
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3031472336759189307
-    second: shao kang punch_0
+      213: -566723491709234812
+    second: shao kang knee_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shao kang punch_0
+      name: shao kang knee_0
       rect:
         serializedVersion: 2
-        x: 224
-        y: 47
-        width: 1665
-        height: 2127
+        x: 319
+        y: 45
+        width: 1822
+        height: 2211
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c09b0d98fb0ee5d0800000000000000
-      internalID: -3031472336759189307
+      spriteID: 4815dc6acf79228f0800000000000000
+      internalID: -566723491709234812
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      shao kang punch_0: -3031472336759189307
+      shao kang knee_0: -566723491709234812
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
