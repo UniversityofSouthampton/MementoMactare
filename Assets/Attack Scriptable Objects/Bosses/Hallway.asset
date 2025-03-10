@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0839640fe7299634a90332e0d8e11ee1, type: 3}
-  m_Name: Knee
+  m_Name: Hallway
   m_EditorClassIdentifier: 
-  sequence: TRE
-  attacks: 00000000
-  reactions: 01000000
+  sequence: KOPXQZILMTREYHU
+  attacks: 0400000002000000000000000300000001000000
+  reactions: 0100000001000000010000000100000000000000
