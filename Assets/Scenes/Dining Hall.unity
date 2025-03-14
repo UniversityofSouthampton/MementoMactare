@@ -202,7 +202,7 @@ Animator:
   m_GameObject: {fileID: 155845968}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7fb1432844b9b4647a7e1668268d4cc0, type: 2}
+  m_Controller: {fileID: 9100000, guid: edd6f1d9351797748987a1915333015b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -471,7 +471,7 @@ Animator:
   m_GameObject: {fileID: 490504607}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7fb1432844b9b4647a7e1668268d4cc0, type: 2}
+  m_Controller: {fileID: 9100000, guid: edd6f1d9351797748987a1915333015b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -718,7 +718,7 @@ GameObject:
   - component: {fileID: 1020705832}
   m_Layer: 0
   m_Name: Shao Kang
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1054,7 +1054,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1318,8 +1318,8 @@ Transform:
   m_GameObject: {fileID: 1687054592}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.7845, y: 7.8573, z: 0}
-  m_LocalScale: {x: 4.7301517, y: 4.6021776, z: 1}
+  m_LocalPosition: {x: 34.7923, y: 7.803, z: 0}
+  m_LocalScale: {x: 4.7292056, y: 4.627029, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

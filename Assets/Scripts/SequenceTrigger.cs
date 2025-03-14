@@ -20,10 +20,10 @@ public class SequenceTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other.name);
+        Debug.Log(other.tag);
         if (Triggered)
             return;
-        if (other.name == "Prototype Player")
+        if (other.tag == "Player")
         {
             //start next sequence
             Triggered = true;
