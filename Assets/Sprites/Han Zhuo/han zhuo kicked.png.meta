@@ -1,0 +1,988 @@
+fileFormatVersion: 2
+guid: 914f96935f5add243aaa52b907a5d31e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7243991422948884326
+    second: han zhuo kicked_0
+  - first:
+      213: -5921327903625869250
+    second: han zhuo kicked_1
+  - first:
+      213: -6858368619035440189
+    second: han zhuo kicked_2
+  - first:
+      213: 2505180482849471803
+    second: han zhuo kicked_3
+  - first:
+      213: 2585570810874240932
+    second: han zhuo kicked_4
+  - first:
+      213: 4780476369462882675
+    second: han zhuo kicked_5
+  - first:
+      213: 4470975823595891843
+    second: han zhuo kicked_6
+  - first:
+      213: 2341240218560607797
+    second: han zhuo kicked_7
+  - first:
+      213: 7709086479965712627
+    second: han zhuo kicked_8
+  - first:
+      213: 7868798789304156368
+    second: han zhuo kicked_9
+  - first:
+      213: 3116960506973996856
+    second: han zhuo kicked_10
+  - first:
+      213: 1827974122028850158
+    second: han zhuo kicked_11
+  - first:
+      213: 6806254290898630874
+    second: han zhuo kicked_12
+  - first:
+      213: -786507742492468110
+    second: han zhuo kicked_13
+  - first:
+      213: 3924660501234340535
+    second: han zhuo kicked_14
+  - first:
+      213: 2970225226091401567
+    second: han zhuo kicked_15
+  - first:
+      213: 9067272702257279809
+    second: han zhuo kicked_16
+  - first:
+      213: -5792131391673691863
+    second: han zhuo kicked_17
+  - first:
+      213: 7330036854985434957
+    second: han zhuo kicked_18
+  - first:
+      213: 4985825323048823352
+    second: han zhuo kicked_19
+  - first:
+      213: -2341579708900085585
+    second: han zhuo kicked_20
+  - first:
+      213: -965740728743431496
+    second: han zhuo kicked_21
+  - first:
+      213: 1131031439124680584
+    second: han zhuo kicked_22
+  - first:
+      213: 7530997448418891847
+    second: han zhuo kicked_23
+  - first:
+      213: -3977612711008428264
+    second: han zhuo kicked_24
+  - first:
+      213: 2415806922097536764
+    second: han zhuo kicked_25
+  - first:
+      213: -1270910753385001993
+    second: han zhuo kicked_26
+  - first:
+      213: -3802344673243410079
+    second: han zhuo kicked_27
+  - first:
+      213: -673073474783996837
+    second: han zhuo kicked_28
+  - first:
+      213: -3000277192901428032
+    second: han zhuo kicked_29
+  - first:
+      213: -5722625431196035686
+    second: han zhuo kicked_30
+  - first:
+      213: 4133785645497208113
+    second: han zhuo kicked_31
+  - first:
+      213: 9129021238119911574
+    second: han zhuo kicked_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: han zhuo kicked_0
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 2192
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a90c72f5e2c287b90800000000000000
+      internalID: -7243991422948884326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_1
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 100
+        width: 1342
+        height: 2271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3885c9e4a733dda0800000000000000
+      internalID: -5921327903625869250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_2
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 2156
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cbc4b3041e22d0a0800000000000000
+      internalID: -6858368619035440189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_3
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 2111
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3dfb7a406034c220800000000000000
+      internalID: 2505180482849471803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_4
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 2077
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af17cb14fac1e320800000000000000
+      internalID: 2585570810874240932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_5
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 2091
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371fbf21ee9a75240800000000000000
+      internalID: 4780476369462882675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_6
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 2054
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38ceac4c2d81c0e30800000000000000
+      internalID: 4470975823595891843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_7
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 2065
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536b9290391cd7020800000000000000
+      internalID: 2341240218560607797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_8
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 2044
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f07f1d1f4d2cfa60800000000000000
+      internalID: 7709086479965712627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_9
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 2021
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d08f75eec6933d60800000000000000
+      internalID: 7868798789304156368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_10
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 2028
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8374b15111ba14b20800000000000000
+      internalID: 3116960506973996856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_11
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 2001
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eebd22a67c44e5910800000000000000
+      internalID: 1827974122028850158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_12
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 2007
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad8bdfb673ca47e50800000000000000
+      internalID: 6806254290898630874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_13
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 2009
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c54a31063c515f0800000000000000
+      internalID: -786507742492468110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_14
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 2014
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b25410aee1377630800000000000000
+      internalID: 3924660501234340535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_15
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 2009
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5115103b1c583920800000000000000
+      internalID: 2970225226091401567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_16
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 1988
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14334a37b7c65dd70800000000000000
+      internalID: 9067272702257279809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_17
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 1981
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92196e2ff273e9fa0800000000000000
+      internalID: -5792131391673691863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_18
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1991
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d47ade3fea589b560800000000000000
+      internalID: 7330036854985434957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_19
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 1970
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83ae87c17b5313540800000000000000
+      internalID: 4985825323048823352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_20
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1968
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa07fb539a9018fd0800000000000000
+      internalID: -2341579708900085585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_21
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 1952
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b2fe168ceff892f0800000000000000
+      internalID: -965740728743431496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_22
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1938
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f43d6f91b32bf00800000000000000
+      internalID: 1131031439124680584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_23
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1909
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7489165474a738860800000000000000
+      internalID: 7530997448418891847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_24
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1922
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f934a405eacc8c0800000000000000
+      internalID: -3977612711008428264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_25
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1885
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfead8d989ba68120800000000000000
+      internalID: 2415806922097536764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_26
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 1898
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb43434761dc5ee0800000000000000
+      internalID: -1270910753385001993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_27
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1868
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1615ab55aab5b3bc0800000000000000
+      internalID: -3802344673243410079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_28
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1879
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5413c3ad33c8a6f0800000000000000
+      internalID: -673073474783996837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_29
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1863
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc77690acfdc56d0800000000000000
+      internalID: -3000277192901428032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_30
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 1851
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9591f67d762590b0800000000000000
+      internalID: -5722625431196035686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_31
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1844
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d487194282e5930800000000000000
+      internalID: 4133785645497208113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo kicked_32
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 1505
+        width: 53
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 690522dc27cc0be70800000000000000
+      internalID: 9129021238119911574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      han zhuo kicked_0: -7243991422948884326
+      han zhuo kicked_1: -5921327903625869250
+      han zhuo kicked_10: 3116960506973996856
+      han zhuo kicked_11: 1827974122028850158
+      han zhuo kicked_12: 6806254290898630874
+      han zhuo kicked_13: -786507742492468110
+      han zhuo kicked_14: 3924660501234340535
+      han zhuo kicked_15: 2970225226091401567
+      han zhuo kicked_16: 9067272702257279809
+      han zhuo kicked_17: -5792131391673691863
+      han zhuo kicked_18: 7330036854985434957
+      han zhuo kicked_19: 4985825323048823352
+      han zhuo kicked_2: -6858368619035440189
+      han zhuo kicked_20: -2341579708900085585
+      han zhuo kicked_21: -965740728743431496
+      han zhuo kicked_22: 1131031439124680584
+      han zhuo kicked_23: 7530997448418891847
+      han zhuo kicked_24: -3977612711008428264
+      han zhuo kicked_25: 2415806922097536764
+      han zhuo kicked_26: -1270910753385001993
+      han zhuo kicked_27: -3802344673243410079
+      han zhuo kicked_28: -673073474783996837
+      han zhuo kicked_29: -3000277192901428032
+      han zhuo kicked_3: 2505180482849471803
+      han zhuo kicked_30: -5722625431196035686
+      han zhuo kicked_31: 4133785645497208113
+      han zhuo kicked_32: 9129021238119911574
+      han zhuo kicked_4: 2585570810874240932
+      han zhuo kicked_5: 4780476369462882675
+      han zhuo kicked_6: 4470975823595891843
+      han zhuo kicked_7: 2341240218560607797
+      han zhuo kicked_8: 7709086479965712627
+      han zhuo kicked_9: 7868798789304156368
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

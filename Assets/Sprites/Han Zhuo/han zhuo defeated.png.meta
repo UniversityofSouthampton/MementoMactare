@@ -1,0 +1,988 @@
+fileFormatVersion: 2
+guid: ce0d1dddb80331249b7bf8f12ae7e4cc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5573290335064467508
+    second: han zhuo defeated_0
+  - first:
+      213: -6316031666035572088
+    second: han zhuo defeated_1
+  - first:
+      213: 5307743602056408677
+    second: han zhuo defeated_2
+  - first:
+      213: -1650483091215239762
+    second: han zhuo defeated_3
+  - first:
+      213: -8035138164439103999
+    second: han zhuo defeated_4
+  - first:
+      213: -5352504322636354771
+    second: han zhuo defeated_5
+  - first:
+      213: -1089339258481757581
+    second: han zhuo defeated_6
+  - first:
+      213: 3036206739256410209
+    second: han zhuo defeated_7
+  - first:
+      213: 6635272711242819971
+    second: han zhuo defeated_8
+  - first:
+      213: 6250928609805938145
+    second: han zhuo defeated_9
+  - first:
+      213: 806834057502242946
+    second: han zhuo defeated_10
+  - first:
+      213: 7402589471342009838
+    second: han zhuo defeated_11
+  - first:
+      213: -1518530464248813896
+    second: han zhuo defeated_12
+  - first:
+      213: 2477291345238763608
+    second: han zhuo defeated_13
+  - first:
+      213: -5304329642226225552
+    second: han zhuo defeated_14
+  - first:
+      213: 3350076527470805805
+    second: han zhuo defeated_15
+  - first:
+      213: -1128793993213470862
+    second: han zhuo defeated_16
+  - first:
+      213: 5441479963570969709
+    second: han zhuo defeated_17
+  - first:
+      213: 8173724751633054230
+    second: han zhuo defeated_18
+  - first:
+      213: 6677685778858976704
+    second: han zhuo defeated_19
+  - first:
+      213: 6270657735740776728
+    second: han zhuo defeated_20
+  - first:
+      213: 3991288317119901369
+    second: han zhuo defeated_21
+  - first:
+      213: 5689486883904352817
+    second: han zhuo defeated_22
+  - first:
+      213: -4970010320320091638
+    second: han zhuo defeated_23
+  - first:
+      213: -1683101779139274529
+    second: han zhuo defeated_24
+  - first:
+      213: 2016128542666316885
+    second: han zhuo defeated_25
+  - first:
+      213: -5257462654024738956
+    second: han zhuo defeated_26
+  - first:
+      213: -3738304226655566808
+    second: han zhuo defeated_27
+  - first:
+      213: -290721772300249971
+    second: han zhuo defeated_28
+  - first:
+      213: 3789668879778362925
+    second: han zhuo defeated_29
+  - first:
+      213: -3548528290073739079
+    second: han zhuo defeated_30
+  - first:
+      213: 7041744081860569931
+    second: han zhuo defeated_31
+  - first:
+      213: 2215780121172875556
+    second: han zhuo defeated_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: han zhuo defeated_0
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 36
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 438a2abf70e485d40800000000000000
+      internalID: 5573290335064467508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 33
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882c4dbd9a2f858a0800000000000000
+      internalID: -6316031666035572088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_2
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 35
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56eac673fa4e8a940800000000000000
+      internalID: 5307743602056408677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 38
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea5b3588f5e4819e0800000000000000
+      internalID: -1650483091215239762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_4
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 40
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1064c6359647d7090800000000000000
+      internalID: -8035138164439103999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_5
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 45
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b64866da518b5b0800000000000000
+      internalID: -5352504322636354771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_6
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 37
+        width: 556
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 372be4a47b3e1e0f0800000000000000
+      internalID: -1089339258481757581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_7
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 30
+        width: 1474
+        height: 1017
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 160860e51f5c22a20800000000000000
+      internalID: 3036206739256410209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_8
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 24
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 389a87d2069351c50800000000000000
+      internalID: 6635272711242819971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_9
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 21
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed2fc7a372cfb650800000000000000
+      internalID: 6250928609805938145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_10
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 25
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 288bb1eec43723b00800000000000000
+      internalID: 806834057502242946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_11
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 23
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed136157e74bb660800000000000000
+      internalID: 7402589471342009838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_12
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 26
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b627d996981deae0800000000000000
+      internalID: -1518530464248813896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_13
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 29
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8582b1e6a5b116220800000000000000
+      internalID: 2477291345238763608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_14
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 24
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ee78f3b4c3366b0800000000000000
+      internalID: -5304329642226225552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_15
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 25
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d23854e2adcdd7e20800000000000000
+      internalID: 3350076527470805805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_16
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 25
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2779ae108d7b550f0800000000000000
+      internalID: -1128793993213470862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_17
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 13
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c9d095235048b40800000000000000
+      internalID: 5441479963570969709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_18
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 8
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61af7e8fa57ee6170800000000000000
+      internalID: 8173724751633054230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_19
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 15
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5219206d7ebac50800000000000000
+      internalID: 6677685778858976704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_20
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 7
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81162eebcf9d50750800000000000000
+      internalID: 6270657735740776728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_21
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 11
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9be2912e397e36730800000000000000
+      internalID: 3991288317119901369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_22
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 9
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132fc5d3d2e15fe40800000000000000
+      internalID: 5689486883904352817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_23
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 7
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0aab4722f9f60bb0800000000000000
+      internalID: -4970010320320091638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_24
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd8539d69db64a8e0800000000000000
+      internalID: -1683101779139274529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_25
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 10
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55cd6274a3abafb10800000000000000
+      internalID: 2016128542666316885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_26
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 11
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47719f6429db907b0800000000000000
+      internalID: -5257462654024738956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_27
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 8
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8248adbbc10ee1cc0800000000000000
+      internalID: -3738304226655566808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_28
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 5
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d845291a61627fbf0800000000000000
+      internalID: -290721772300249971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_29
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d26ba8384cb979430800000000000000
+      internalID: 3789668879778362925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_30
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 1
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b00bb2325811cec0800000000000000
+      internalID: -3548528290073739079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_31
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 0
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b22860fec49b160800000000000000
+      internalID: 7041744081860569931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: han zhuo defeated_32
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42991eec74800ce10800000000000000
+      internalID: 2215780121172875556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      han zhuo defeated_0: 5573290335064467508
+      han zhuo defeated_1: -6316031666035572088
+      han zhuo defeated_10: 806834057502242946
+      han zhuo defeated_11: 7402589471342009838
+      han zhuo defeated_12: -1518530464248813896
+      han zhuo defeated_13: 2477291345238763608
+      han zhuo defeated_14: -5304329642226225552
+      han zhuo defeated_15: 3350076527470805805
+      han zhuo defeated_16: -1128793993213470862
+      han zhuo defeated_17: 5441479963570969709
+      han zhuo defeated_18: 8173724751633054230
+      han zhuo defeated_19: 6677685778858976704
+      han zhuo defeated_2: 5307743602056408677
+      han zhuo defeated_20: 6270657735740776728
+      han zhuo defeated_21: 3991288317119901369
+      han zhuo defeated_22: 5689486883904352817
+      han zhuo defeated_23: -4970010320320091638
+      han zhuo defeated_24: -1683101779139274529
+      han zhuo defeated_25: 2016128542666316885
+      han zhuo defeated_26: -5257462654024738956
+      han zhuo defeated_27: -3738304226655566808
+      han zhuo defeated_28: -290721772300249971
+      han zhuo defeated_29: 3789668879778362925
+      han zhuo defeated_3: -1650483091215239762
+      han zhuo defeated_30: -3548528290073739079
+      han zhuo defeated_31: 7041744081860569931
+      han zhuo defeated_32: 2215780121172875556
+      han zhuo defeated_4: -8035138164439103999
+      han zhuo defeated_5: -5352504322636354771
+      han zhuo defeated_6: -1089339258481757581
+      han zhuo defeated_7: 3036206739256410209
+      han zhuo defeated_8: 6635272711242819971
+      han zhuo defeated_9: 6250928609805938145
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

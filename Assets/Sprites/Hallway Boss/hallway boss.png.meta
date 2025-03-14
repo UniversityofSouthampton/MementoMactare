@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 404172ffa4a0bf942b6bb030382167a4
+guid: ac45ebacbc02ea640ba85f9a8b98d677
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4228502464023574290
-    second: basic enemy 1_0
+      213: -1941180771145706668
+    second: hallway boss_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: basic enemy 1_0
+      name: hallway boss_0
       rect:
         serializedVersion: 2
         x: 517
         y: 36
         width: 1350
-        height: 2052
+        height: 2086
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee8c20c99675155c0800000000000000
-      internalID: -4228502464023574290
+      spriteID: 4539a0b9f5a8f05e0800000000000000
+      internalID: -1941180771145706668
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      basic enemy 1_0: -4228502464023574290
+      hallway boss_0: -1941180771145706668
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
