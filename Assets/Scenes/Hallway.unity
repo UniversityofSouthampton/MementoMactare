@@ -1416,10 +1416,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackSequence:
-  - {fileID: 11400000, guid: 892dc59febb0fcc4d9c292c45a54433f, type: 2}
-  - {fileID: 11400000, guid: b6211197fbc63a041a822098524ffc34, type: 2}
-  - {fileID: 11400000, guid: f1fcb2f3569edf444b59ed83c2340ea1, type: 2}
-  - {fileID: 11400000, guid: 5df3e1a9c751bb746aef9412ca2e90dd, type: 2}
+  - {fileID: 11400000, guid: 618f2a006a67b56449ffc6675743da63, type: 2}
+  - {fileID: 11400000, guid: 6f384896b0d92704fa27f31d7d80fb5b, type: 2}
+  - {fileID: 11400000, guid: 6309e05580696834882016f5a16cb633, type: 2}
+  - {fileID: 11400000, guid: 737c7750d12c7864398d08a81b1fd7c0, type: 2}
   currentKeyId: 0
   keyContainer: {fileID: 897531895}
   keyPrefab: {fileID: 5760362979291603979, guid: 92458b3f34e1739429a937bec25b311d, type: 3}
