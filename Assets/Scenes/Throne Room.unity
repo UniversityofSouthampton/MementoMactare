@@ -183,6 +183,14 @@ PrefabInstance:
       propertyPath: keyGameplayScript
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6459898953061944823, guid: 72f544504a7cee441828ad772043e712, type: 3}
+      propertyPath: m_Size.x
+      value: 13.437256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459898953061944823, guid: 72f544504a7cee441828ad772043e712, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.23962665
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -243,6 +251,14 @@ PrefabInstance:
     - target: {fileID: 2974846074269761160, guid: 72f544504a7cee441828ad772043e712, type: 3}
       propertyPath: m_Name
       value: Throne Room Enemy 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459898953061944823, guid: 72f544504a7cee441828ad772043e712, type: 3}
+      propertyPath: m_Size.x
+      value: 13.384491
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459898953061944823, guid: 72f544504a7cee441828ad772043e712, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.21324182
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -377,8 +393,8 @@ Transform:
   m_GameObject: {fileID: 349767772}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.7, y: -2.67, z: 0}
-  m_LocalScale: {x: 90.31104, y: 1, z: 1}
+  m_LocalPosition: {x: 35.4298, y: -2.6318, z: 0}
+  m_LocalScale: {x: 91.776535, y: 0.9235874, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -442,6 +458,14 @@ PrefabInstance:
     - target: {fileID: 2974846074269761160, guid: 72f544504a7cee441828ad772043e712, type: 3}
       propertyPath: m_Name
       value: Throne Room Enemy 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459898953061944823, guid: 72f544504a7cee441828ad772043e712, type: 3}
+      propertyPath: m_Size.x
+      value: 13.406246
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459898953061944823, guid: 72f544504a7cee441828ad772043e712, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.22412229
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1157,8 +1181,8 @@ Transform:
   m_GameObject: {fileID: 1153403328}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.6777, y: 8.8456, z: 0}
-  m_LocalScale: {x: 4.732859, y: 5.1784644, z: 1}
+  m_LocalPosition: {x: 35.3, y: 8.8456, z: 0}
+  m_LocalScale: {x: 4.7976995, y: 5.1784644, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1322,7 +1346,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -7.342722, y: -1.2938347}
+  m_Offset: {x: -0.4502449, y: -0.82843494}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1332,7 +1356,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 27.71957, y: 21.847446}
+  m_Size: {x: 13.934616, y: 22.778246}
   m_EdgeRadius: 0
 --- !u!1001 &1904749542
 PrefabInstance:

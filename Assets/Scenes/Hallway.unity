@@ -183,6 +183,14 @@ PrefabInstance:
       propertyPath: keyGameplayScript
       value: 
       objectReference: {fileID: 1995545772}
+    - target: {fileID: 6459898953061944823, guid: 72f544504a7cee441828ad772043e712, type: 3}
+      propertyPath: m_Size.x
+      value: 13.299308
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459898953061944823, guid: 72f544504a7cee441828ad772043e712, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.17065573
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -697,6 +705,14 @@ PrefabInstance:
       propertyPath: keyGameplayScript
       value: 
       objectReference: {fileID: 1995545772}
+    - target: {fileID: 6459898953061944823, guid: 72f544504a7cee441828ad772043e712, type: 3}
+      propertyPath: m_Size.x
+      value: 13.152945
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459898953061944823, guid: 72f544504a7cee441828ad772043e712, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0974741
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -766,6 +782,14 @@ PrefabInstance:
       propertyPath: keyGameplayScript
       value: 
       objectReference: {fileID: 1995545772}
+    - target: {fileID: 6459898953061944823, guid: 72f544504a7cee441828ad772043e712, type: 3}
+      propertyPath: m_Size.x
+      value: 13.226131
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459898953061944823, guid: 72f544504a7cee441828ad772043e712, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.13406253
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1604,7 +1628,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -7.342722, y: -1.2938347}
+  m_Offset: {x: -0.4423945, y: -1.2938347}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1614,7 +1638,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 27.71957, y: 21.847446}
+  m_Size: {x: 13.918915, y: 21.847446}
   m_EdgeRadius: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
