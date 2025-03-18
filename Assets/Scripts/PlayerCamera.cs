@@ -38,8 +38,8 @@ public class PlayerCamera : MonoBehaviour
         cameraOffset.z = 0;
 
         float camHorzExtent = cam.orthographicSize * Screen.width / Screen.height;
-        minX = (backgroundSprite.bounds.min.x) + camHorzExtent;
-        maxX = (backgroundSprite.bounds.max.x) - camHorzExtent;
+        minX = (backgroundSprite.bounds.min.x) + camHorzExtent + 0.1f;
+        maxX = (backgroundSprite.bounds.max.x) - camHorzExtent - 0.1f;
         Debug.Log(minX);
     }
 
