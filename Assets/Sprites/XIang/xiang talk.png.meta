@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      xiang talk_0: -250438997543972867
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

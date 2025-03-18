@@ -416,8 +416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraSmoothSpeed: 15
-  minX: 7.2
-  maxX: 62.3
+  backgroundSprite: {fileID: 1687054593}
 --- !u!4 &370475339
 Transform:
   m_ObjectHideFlags: 0

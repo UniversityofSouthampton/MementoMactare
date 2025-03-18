@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      throne room bg_0: 9028242574819349856
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

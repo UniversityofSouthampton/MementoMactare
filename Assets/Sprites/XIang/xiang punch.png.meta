@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      xiang punch_0: 1072251931889458615
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

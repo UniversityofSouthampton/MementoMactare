@@ -7,11 +7,15 @@ public class PlayerCamera : MonoBehaviour
     [Header("Camera Settings")]
     [SerializeField] float cameraSmoothSpeed = 10f;
 
+    [SerializeField] private SpriteRenderer backgroundSprite;
+
     [Header("Camera Values")]
     private Vector3 cameraVelocity;
     private Vector3 cameraOffset;
-    [SerializeField] private float minX;
-    [SerializeField] private float maxX;
+    private float minX;
+    private float maxX;
+
+    private Camera cam;
 
     private void Awake()
     {
@@ -28,8 +32,15 @@ public class PlayerCamera : MonoBehaviour
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
+        cam = Camera.main;
+        
         cameraOffset = transform.position - PlayerManager.instance.transform.position;
         cameraOffset.z = 0;
+
+        float camHorzExtent = cam.orthographicSize * Screen.width / Screen.height;
+        minX = (backgroundSprite.bounds.min.x) + camHorzExtent;
+        maxX = (backgroundSprite.bounds.max.x) - camHorzExtent;
+        Debug.Log(minX);
     }
 
     public void HandleAllCameraActions()

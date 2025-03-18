@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dining hall bg_0: 8264617576577127629
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

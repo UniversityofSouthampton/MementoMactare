@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hallway bg_0: 8203446154348277646
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

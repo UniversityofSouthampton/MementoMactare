@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      xiang kick_0: -7286553339620050298
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

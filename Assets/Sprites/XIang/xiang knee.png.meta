@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      xiang knee_0: -3083583349700297863
+      xiang knee_1: 7156535342402878303
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
