@@ -5,7 +5,7 @@ public class Enums : MonoBehaviour
 
 }
 
-public enum Attacks
+public enum AttackType
 {
     Punch,
     Kick,

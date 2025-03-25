@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class KeyGameplay : MonoBehaviour
@@ -11,17 +13,25 @@ public class KeyGameplay : MonoBehaviour
     private Attack currentAttack;
     private string currentSequence;
     public List<Attack> attackSequence;
+    private int currentEnemyId = -1;
     private int currentAttackId = -1;
-    public int currentKeyId = 0;
-    public GameObject keyContainer;
+    private int currentKeyId = 0;
+    [FormerlySerializedAs("canvas")] public GameObject container;
+    public GameObject keyContainerPrefab;
+    private GameObject currentKeyContainer;
     public GameObject keyPrefab;
     [SerializeField] int attackIndex = 0; //used to determine which attack to perform, if a sequence has several attacks. i.e. if this is 0, it performs the first attack. if its 1, it performs the second.
+    private List<AttackType> learnedAttacks;
 
     [Header("Configuration")]
     public float memorisationTime;
 
     [Header("Debug")]
     public bool recallPhase;
+
+    [Header("UI")] 
+    public List<Sprite> attackSprites;
+    public List<Sprite> attackLearnedSprites;
 
     private void Awake()
     {
@@ -31,37 +41,40 @@ public class KeyGameplay : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        learnedAttacks = new List<AttackType>();
     }
 
     void StartSequence(int attackId)
     {
         ClearKeys();
-        currentAttack = attackSequence[attackId];
-        currentSequence = currentAttack.sequence;
-        
-        //For each letter in currentSequence, create key object
-        foreach (char key in currentSequence)
-        {
-            //Spawns key with specific text 
-            SpawnKeyObject(key.ToString());
-        }
-        
-        //After all objects are created, start timer
-        Invoke("StartRecall", memorisationTime);
+        StartSpecificSequence(attackSequence[attackId]);
     }
     
     public void StartSpecificSequence(Attack attackSequence)
     {
         ClearKeys();
         currentAttack = attackSequence;
-        currentSequence = currentAttack.sequence;
-        
-        //For each letter in currentSequence, create key object
-        foreach (char key in currentSequence)
+        foreach (AttackType attack in currentAttack.attacks)
         {
-            //Spawns key with specific text 
-            SpawnKeyObject(key.ToString());
+            currentSequence = "";
+            currentSequence += GetKeysForAttack(attack);
+            currentKeyContainer = Instantiate(keyContainerPrefab, container.transform);
+
+            
+            if (!learnedAttacks.Contains(attack))
+            {
+                currentKeyContainer.transform.GetChild(0).GetComponent<Image>().sprite = attackSprites[(int)attack];
+                currentKeyContainer.transform.GetChild(0).GetComponent<Image>().rectTransform.sizeDelta = new Vector2(100, 100);
+                foreach (char key in GetKeysForAttack(attack))
+                {
+                    SpawnKeyObject(key.ToString());
+                }
+            }
+            else
+            {
+                currentKeyContainer.transform.GetChild(0).GetComponent<Image>().sprite = attackLearnedSprites[(int)attack];
+                currentKeyContainer.transform.GetChild(0).GetComponent<Image>().rectTransform.sizeDelta = new Vector2(35, 35);
+            }
         }
         
         //After all objects are created, start timer
@@ -74,7 +87,7 @@ public class KeyGameplay : MonoBehaviour
         GameObject keyObject = Instantiate(keyPrefab);
         
         //Set the parent of the key object to be the KeyContainer
-        keyObject.transform.parent = keyContainer.transform;
+        keyObject.transform.parent = currentKeyContainer.transform;
         
         //Set the text of the keyobject to our specific text
         keyObject.GetComponentInChildren<TMP_Text>().text = key;
@@ -85,21 +98,36 @@ public class KeyGameplay : MonoBehaviour
     void StartRecall()
     {
         ClearKeys();
+        currentKeyContainer = container.transform.GetChild(0).gameObject;
+        currentKeyContainer.transform.GetChild(0).GetComponent<Image>().sprite = attackLearnedSprites[(int)currentAttack.attacks[0]];
+        currentKeyContainer.transform.GetChild(0).GetComponent<Image>().rectTransform.sizeDelta = new Vector2(35, 35);
+        currentSequence = GetKeysForAttack(currentAttack.attacks[0]);
 
         //Set "RecallPhase" flag to true
         //Set the current key id to 0 (we start counting from 0)
         //For example if our currentSequence was "ABCDE", 0 would be A, 1 would be B, etc.
         recallPhase = true;
+        currentAttackId = 0;
         currentKeyId = 0;
     }
 
-    void ClearKeys()
+    void ClearKeys(bool clearAll = false)
     {
-        //For each child of the KeyContainer object
-        foreach (Transform key in keyContainer.transform)
+        foreach (Transform keyContainer in container.transform)
         {
-            //Destroy the child (delete the key object)
-            Destroy(key.gameObject);
+            //For each child of the KeyContainer object
+            foreach (Transform child in keyContainer)
+            {
+                if (!child.CompareTag("AttackIcon") || clearAll)
+                {
+                    Destroy(child.gameObject);
+                }
+            }
+
+            if (clearAll)
+            {
+                Destroy(keyContainer.gameObject);
+            }
         }
     }
 
@@ -134,20 +162,36 @@ public class KeyGameplay : MonoBehaviour
                     }
                     if (currentKeyId == currentSequence.Length)
                     {
-                        Debug.Log("Completed Sequence");
-                        PlayerManager.instance.enemyAnimator.SetBool("Defeated",true);
-                        recallPhase = false;
-                        PlayerManager.instance.playerLocomotionManager.canMove = true; //temporary i think? -JR
-                        attackIndex = 0;
-
-                        //Set to green
-                        //For each child of the KeyContainer object
-                        foreach (Transform key in keyContainer.transform)
+                        Debug.Log("Completed Attack");
+                        if (!learnedAttacks.Contains(currentAttack.attacks[currentAttackId]))
+                        {
+                            learnedAttacks.Add(currentAttack.attacks[currentAttackId]);
+                        }
+                        foreach (Transform key in container.transform.GetChild(currentAttackId).transform)
                         {
                             key.GetComponent<Image>().color = Color.green;
                         }
+                        currentAttackId++;
 
-                        Invoke("ClearKeys", 1);
+                        if (currentAttackId != currentAttack.attacks.Length)
+                        {
+                            currentKeyId = 0;
+                            currentKeyContainer = container.transform.GetChild(currentAttackId).gameObject;
+                            currentKeyContainer.transform.GetChild(0).GetComponent<Image>().sprite = attackLearnedSprites[(int)currentAttack.attacks[currentAttackId]];
+                            currentKeyContainer.transform.GetChild(0).GetComponent<Image>().rectTransform.sizeDelta = new Vector2(35, 35);
+                            currentSequence = GetKeysForAttack(currentAttack.attacks[currentAttackId]);
+                            //For each child of the KeyContainer object
+                        }
+                        else
+                        {
+                            PlayerManager.instance.enemyAnimator.SetBool("Defeated",true);
+                            recallPhase = false;
+                            PlayerManager.instance.playerLocomotionManager.canMove = true; //temporary i think? -JR
+                            attackIndex = 0;
+
+                            //Invoke("ClearKeys(clearAll:true)", 1);
+                            ClearKeys(clearAll: true);
+                        }
                     }
                 }
                 //If the key is not the one that we want
@@ -174,15 +218,36 @@ public class KeyGameplay : MonoBehaviour
     public void NextSequence()
     {
         ClearKeys();
-        currentAttackId = currentAttackId + 1;
-        if (currentAttackId < attackSequence.Count)
+        currentEnemyId = currentEnemyId + 1;
+        if (currentEnemyId < attackSequence.Count)
         {
-            StartSequence(currentAttackId);
+            StartSequence(currentEnemyId);
         }
         else
         {
             Debug.Log("ALL SEQUENCES COMPLETE");
             PlayerManager.instance.playerLocomotionManager.canMove = true;
+        }
+    }
+    
+    public string GetKeysForAttack(AttackType attackType)
+    {
+        switch (attackType)
+        {
+            case AttackType.Punch:
+                return "ILM";
+            case AttackType.Kick:
+                return "YHU";
+            case AttackType.Chop:
+                return "XQZ";
+            case AttackType.Elbow:
+                return "KOP";
+            case AttackType.Knee:
+                return "TRE";
+            case AttackType.Palm:
+                return "NGF";
+            default:
+                return "";
         }
     }
 }
