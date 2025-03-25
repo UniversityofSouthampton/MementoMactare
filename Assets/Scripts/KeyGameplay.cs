@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class KeyGameplay : MonoBehaviour
 {
     public static KeyGameplay instance;
-    [Header("Fields")]
+    [Header("Fields")] 
+    private Attack currentAttack;
     private string currentSequence;
     public List<Attack> attackSequence;
     private int currentAttackId = -1;
@@ -35,7 +36,26 @@ public class KeyGameplay : MonoBehaviour
 
     void StartSequence(int attackId)
     {
-        currentSequence = attackSequence[attackId].sequence;
+        ClearKeys();
+        currentAttack = attackSequence[attackId];
+        currentSequence = currentAttack.sequence;
+        
+        //For each letter in currentSequence, create key object
+        foreach (char key in currentSequence)
+        {
+            //Spawns key with specific text 
+            SpawnKeyObject(key.ToString());
+        }
+        
+        //After all objects are created, start timer
+        Invoke("StartRecall", memorisationTime);
+    }
+    
+    public void StartSpecificSequence(Attack attackSequence)
+    {
+        ClearKeys();
+        currentAttack = attackSequence;
+        currentSequence = currentAttack.sequence;
         
         //For each letter in currentSequence, create key object
         foreach (char key in currentSequence)
@@ -141,13 +161,13 @@ public class KeyGameplay : MonoBehaviour
 
     private void PerformAttackAnimation()
     {
-        string attackToPerform = attackSequence[currentAttackId].attacks[attackIndex].ToString();
+        string attackToPerform = currentAttack.attacks[attackIndex].ToString();
         PlayerManager.instance.playerAnimatorManager.PlayAttackAnimation(attackToPerform);
      
     }
     private void PerformEnemyReaction()
     {
-        string attackToPerform = attackSequence[currentAttackId].reactions[attackIndex].ToString();
+        string attackToPerform = currentAttack.reactions[attackIndex].ToString();
         PlayerManager.instance.enemyAnimator.Play(attackToPerform);
   
     }

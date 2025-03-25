@@ -26,6 +26,7 @@ public class PlayerCamera : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            
         }
     }
 

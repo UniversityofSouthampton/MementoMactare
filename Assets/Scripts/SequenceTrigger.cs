@@ -6,6 +6,8 @@ public class SequenceTrigger : MonoBehaviour
 {
     public KeyGameplay keyGameplayScript;
 
+    public Attack enemyAttackSequence;
+
     private bool Triggered;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     // Update is called once per frame
@@ -27,7 +29,8 @@ public class SequenceTrigger : MonoBehaviour
         {
             //start next sequence
             Triggered = true;
-            keyGameplayScript.NextSequence();
+            //keyGameplayScript.NextSequence();
+            keyGameplayScript.StartSpecificSequence(enemyAttackSequence);
             PlayerManager.instance.playerLocomotionManager.canMove = false;
             PlayerManager.instance.currentEnemy = gameObject;
             PlayerManager.instance.enemyAnimator = gameObject.GetComponent<Animator>();

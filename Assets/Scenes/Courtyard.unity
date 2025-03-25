@@ -175,6 +175,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Courtyard Enemy 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6070242902102404802, guid: 72f544504a7cee441828ad772043e712, type: 3}
+      propertyPath: keyGameplayScript
+      value: 
+      objectReference: {fileID: 874553960}
+    - target: {fileID: 6070242902102404802, guid: 72f544504a7cee441828ad772043e712, type: 3}
+      propertyPath: enemyAttackSequence
+      value: 
+      objectReference: {fileID: 11400000, guid: b6211197fbc63a041a822098524ffc34, type: 2}
     - target: {fileID: 6459898953061944823, guid: 72f544504a7cee441828ad772043e712, type: 3}
       propertyPath: m_Size.x
       value: 13.356108
@@ -795,6 +803,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Courtyard Enemy 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6070242902102404802, guid: 72f544504a7cee441828ad772043e712, type: 3}
+      propertyPath: keyGameplayScript
+      value: 
+      objectReference: {fileID: 874553960}
+    - target: {fileID: 6070242902102404802, guid: 72f544504a7cee441828ad772043e712, type: 3}
+      propertyPath: enemyAttackSequence
+      value: 
+      objectReference: {fileID: 11400000, guid: f1fcb2f3569edf444b59ed83c2340ea1, type: 2}
     - target: {fileID: 6459898953061944823, guid: 72f544504a7cee441828ad772043e712, type: 3}
       propertyPath: m_Size.x
       value: 13.38023
@@ -896,6 +912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keyGameplayScript: {fileID: 874553960}
+  enemyAttackSequence: {fileID: 11400000, guid: 5df3e1a9c751bb746aef9412ca2e90dd, type: 2}
 --- !u!61 &1349293611
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1744,6 +1761,10 @@ PrefabInstance:
       propertyPath: keyGameplayScript
       value: 
       objectReference: {fileID: 874553960}
+    - target: {fileID: 6070242902102404802, guid: 72f544504a7cee441828ad772043e712, type: 3}
+      propertyPath: enemyAttackSequence
+      value: 
+      objectReference: {fileID: 11400000, guid: 892dc59febb0fcc4d9c292c45a54433f, type: 2}
     - target: {fileID: 6459898953061944823, guid: 72f544504a7cee441828ad772043e712, type: 3}
       propertyPath: m_Size.x
       value: 13.516897
