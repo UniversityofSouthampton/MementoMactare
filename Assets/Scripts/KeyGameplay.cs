@@ -63,6 +63,7 @@ public class KeyGameplay : MonoBehaviour
             
             if (!learnedAttacks.Contains(attack))
             {
+                Debug.Log(attackSprites);
                 currentKeyContainer.transform.GetChild(0).GetComponent<Image>().sprite = attackSprites[(int)attack];
                 currentKeyContainer.transform.GetChild(0).GetComponent<Image>().rectTransform.sizeDelta = new Vector2(100, 100);
                 foreach (char key in GetKeysForAttack(attack))
