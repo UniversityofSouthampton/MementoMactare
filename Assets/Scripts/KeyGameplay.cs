@@ -21,7 +21,7 @@ public class KeyGameplay : MonoBehaviour
     private GameObject currentKeyContainer;
     public GameObject keyPrefab;
     [SerializeField] int attackIndex = 0; //used to determine which attack to perform, if a sequence has several attacks. i.e. if this is 0, it performs the first attack. if its 1, it performs the second.
-    private List<AttackType> learnedAttacks;
+    [SerializeField] private List<AttackType> learnedAttacks;
 
     [Header("Configuration")]
     public float memorisationTime;
@@ -41,7 +41,8 @@ public class KeyGameplay : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        learnedAttacks = new List<AttackType>();
+        if (learnedAttacks == null)
+            learnedAttacks = new List<AttackType>();
     }
 
     void StartSequence(int attackId)
