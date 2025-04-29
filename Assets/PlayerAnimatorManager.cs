@@ -2,8 +2,23 @@ using UnityEngine;
 
 public class PlayerAnimatorManager : MonoBehaviour
 {
-    Animator playerAnimator;
+    
+    public static PlayerAnimatorManager instance;
+    //Set up PlayerHealth as a singleton
+    //(https://techhub.wsagames.com/guides//1_Unity/1_Coding/1_Advanced-CSharp#programming-design-patterns)
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
+    Animator playerAnimator;
     private void Start()
     {
         playerAnimator = GetComponent<Animator>();

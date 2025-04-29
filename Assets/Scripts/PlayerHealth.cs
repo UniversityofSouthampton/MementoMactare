@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
@@ -22,6 +23,8 @@ public class PlayerHealth : MonoBehaviour
     private int _health;
     [SerializeField] private Image healthSymbol;
     [SerializeField] private Image healthBarFill;
+
+    private bool inGameOverSequence = false;
     
     void Start()
     {
@@ -52,10 +55,27 @@ public class PlayerHealth : MonoBehaviour
         {
             healthSymbol.color = new Color(0.2627f, 0.2627f, 0.2627f, 1);
         }
+        else
+        {
+            healthSymbol.color = new Color(0.4549f, 0f, 0f, 1);
+        }
     }
 
     private void GameOverSequence()
     {
+        //If already in game over sequence, cancel further code
+        //This to prevent a scenario where button spam tries to load game over scene multiple times
+        if (inGameOverSequence) return;
         
+        inGameOverSequence = true;
+        PlayerAnimatorManager.instance.PlayAttackAnimation("Defeat");
+        
+        //After one second, run "GoToGameOverScene" method
+        Invoke("GoToGameOverScene", 1);
+    }
+    void GoToGameOverScene()
+    {
+        SceneManager.LoadSceneAsync("Game Over");
+        inGameOverSequence = false;
     }
 }
