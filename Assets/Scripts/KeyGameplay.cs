@@ -200,6 +200,7 @@ public class KeyGameplay : MonoBehaviour
                 else
                 {
                     Debug.Log("INCORRECT");
+                    PlayerHealth.instance.InflictDamage(amount: 1);
                 }
             }
         }

@@ -2038,6 +2038,63 @@ Transform:
   - {fileID: 1226798066}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1949863763
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3423615316946435787, guid: 2a0dc80fe882ca242a3a83a39348bbfc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.821403
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423615316946435787, guid: 2a0dc80fe882ca242a3a83a39348bbfc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5377221
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423615316946435787, guid: 2a0dc80fe882ca242a3a83a39348bbfc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.4183197
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423615316946435787, guid: 2a0dc80fe882ca242a3a83a39348bbfc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423615316946435787, guid: 2a0dc80fe882ca242a3a83a39348bbfc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423615316946435787, guid: 2a0dc80fe882ca242a3a83a39348bbfc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423615316946435787, guid: 2a0dc80fe882ca242a3a83a39348bbfc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423615316946435787, guid: 2a0dc80fe882ca242a3a83a39348bbfc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423615316946435787, guid: 2a0dc80fe882ca242a3a83a39348bbfc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423615316946435787, guid: 2a0dc80fe882ca242a3a83a39348bbfc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4084012009666710488, guid: 2a0dc80fe882ca242a3a83a39348bbfc, type: 3}
+      propertyPath: m_Name
+      value: Player Health Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a0dc80fe882ca242a3a83a39348bbfc, type: 3}
 --- !u!1 &1995545771
 GameObject:
   m_ObjectHideFlags: 0
@@ -2422,3 +2479,4 @@ SceneRoots:
   - {fileID: 1995545773}
   - {fileID: 1529066517}
   - {fileID: 1238432324}
+  - {fileID: 1949863763}

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -18,33 +19,39 @@ public class PlayerHealth : MonoBehaviour
     }
 
     [SerializeField] private int maxHealth;
-    private int health;
+    private int _health;
+    [SerializeField] private Image healthSymbol;
+    [SerializeField] private Image healthBarFill;
     
     void Start()
     {
         DontDestroyOnLoad(gameObject);
-        health = maxHealth;
+        _health = maxHealth;
     }
 
     public void InflictDamage(int amount)
     {
-        //sets health to the maximum between (health - amount) but not below zero
-        health = Mathf.Max(0,health-amount);
+        //sets _health to the maximum between (_health - amount) but not below zero
+        _health = Mathf.Max(0,_health-amount);
         
         UpdateHealthUI();
         
-        if (health == 0) GameOverSequence();
+        if (_health == 0) GameOverSequence();
     }
 
     public void ResetHealth()
     {
-        health = maxHealth;
+        _health = maxHealth;
         UpdateHealthUI();
     }
 
     private void UpdateHealthUI()
     {
-        
+        healthBarFill.fillAmount = 1.0f / maxHealth * _health;
+        if (_health == 0)
+        {
+            healthSymbol.color = new Color(0.2627f, 0.2627f, 0.2627f, 1);
+        }
     }
 
     private void GameOverSequence()
