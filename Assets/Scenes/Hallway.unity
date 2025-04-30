@@ -2178,6 +2178,7 @@ GameObject:
   - component: {fileID: 2093875473}
   - component: {fileID: 2093875472}
   - component: {fileID: 2093875471}
+  - component: {fileID: 2093875475}
   m_Layer: 0
   m_Name: StartSequenceTrigger (3)
   m_TagString: Untagged
@@ -2291,6 +2292,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyGameplayScript: {fileID: 1995545772}
   enemyAttackSequence: {fileID: 11400000, guid: 737c7750d12c7864398d08a81b1fd7c0, type: 2}
+  enemyName: 
+  introDialoguesOfCurrentEnemy: 
 --- !u!61 &2093875474
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2337,6 +2340,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 13.918915, y: 21.847446}
   m_EdgeRadius: 0
+--- !u!114 &2093875475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093875469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eddda155bbbcf644b5bedab9fa0ad73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueSpeed: 0.02
+  textDoneAnimating: 0
 --- !u!1001 &2452913604400757710
 PrefabInstance:
   m_ObjectHideFlags: 0
