@@ -455,6 +455,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8230688624414958172, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: textSpeed
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230688624414958172, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: dialogueCloseTime
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9120781353500186036, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
       propertyPath: m_Name
       value: Dialogue Manager
@@ -837,7 +845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eddda155bbbcf644b5bedab9fa0ad73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeed: 0.02
+  dialogueSpeed: 0.75
   textDoneAnimating: 0
 --- !u!114 &1262611189
 MonoBehaviour:
@@ -853,10 +861,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Xiang
   introDialogue:
-  - Shao Kang.
-  - Look within yourself, warrior
-  - Kill the bad people
-  - I believe in you champ
+  - After all this time, my son. You have returned to avenge me.
+  - Yes, it is I, Shao. I have returned from Diyu to help you this day.
+  - ' I regret that we are unable to talk more, but there is simply no time.'
+  - 'This is the most important fight of your life, and you will need my help to
+    get through it. '
+  - With the slight precognition afforded to me in this form, I can assist you with
+    the knowledge of how and when to attack.
+  - ' Alone you may not be enough, but together, we could overcome even Kinguang
+    himself.'
+  - When you are ready, proceed forward and prepare to fight the first enemy.
+  - I will tell you the keys to press, and after a short delay, you will have to
+    press those keys in the same order to attack the enemy.
+  - This will allow you to slip through his defences. Whenever you are ready... continue.
 --- !u!61 &1262611190
 BoxCollider2D:
   m_ObjectHideFlags: 0

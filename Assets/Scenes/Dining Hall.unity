@@ -621,8 +621,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyGameplayScript: {fileID: 2051536876}
   enemyAttackSequence: {fileID: 11400000, guid: ca8f772c3987cd541926e000f8851804, type: 2}
-  enemyName: The Malignant Chef
-  introDialoguesOfCurrentEnemy: How dare you despoil my banquet?
+  enemyName: Malignant Chef
+  introDialoguesOfCurrentEnemy: In this world, it's cook or be cooked. I may just
+    be a chef, but I will stall you for as long as I can.
 --- !u!61 &490504612
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -681,7 +682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eddda155bbbcf644b5bedab9fa0ad73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeed: 0.02
+  dialogueSpeed: 0.75
   textDoneAnimating: 0
 --- !u!1001 &779469061
 PrefabInstance:
@@ -2278,6 +2279,10 @@ PrefabInstance:
     - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230688624414958172, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: dialogueCloseTime
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9120781353500186036, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
       propertyPath: m_Name

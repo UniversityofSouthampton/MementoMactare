@@ -2001,8 +2001,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyGameplayScript: {fileID: 1074469999}
   enemyAttackSequence: {fileID: 11400000, guid: c76a02c07c0e372418299f1999ef67a6, type: 2}
-  enemyName: 
-  introDialoguesOfCurrentEnemy: 
+  enemyName: Han Zhuo
+  introDialoguesOfCurrentEnemy: "Shao! Good to see you after so long. It\u2019s been
+    nineteen years, and you were just a little baby. I sent many men after you in
+    your youth, but you survived them all\u2026 I will have to end things myself
+    here. Say hi to Dad for me, will you?"
 --- !u!61 &1478767892
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2187,6 +2190,107 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4783509420061830196, guid: 9960cc73800c25b488fcfa44422b2980, type: 3}
   m_PrefabInstance: {fileID: 1784643801}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1874500578
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230688624414958172, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: dialogueCloseTime
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9120781353500186036, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_Name
+      value: Dialogue Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
 --- !u!1001 &1904749542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2615,3 +2719,4 @@ SceneRoots:
   - {fileID: 353814305}
   - {fileID: 149637423}
   - {fileID: 891225889}
+  - {fileID: 1874500578}
