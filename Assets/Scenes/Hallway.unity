@@ -1934,6 +1934,107 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8574923986406610478, guid: 7bc3a581991cacd469447708b194a4f2, type: 3}
   m_PrefabInstance: {fileID: 1426007676}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1462445128
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359488581725721268, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230688624414958172, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: dialogueCloseTime
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9120781353500186036, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: m_Name
+      value: Dialogue Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
 --- !u!1001 &1529066517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2178,6 +2279,7 @@ GameObject:
   - component: {fileID: 2093875473}
   - component: {fileID: 2093875472}
   - component: {fileID: 2093875471}
+  - component: {fileID: 2093875475}
   m_Layer: 0
   m_Name: StartSequenceTrigger (3)
   m_TagString: Untagged
@@ -2291,6 +2393,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyGameplayScript: {fileID: 1995545772}
   enemyAttackSequence: {fileID: 11400000, guid: 737c7750d12c7864398d08a81b1fd7c0, type: 2}
+  enemyName: Throne Royal Guard
+  introDialoguesOfCurrentEnemy: "Well, well\u2026 If you\u2019re all this way in
+    the castle, I suppose your skills can no longer be denied. But if you can\u2019t
+    defeat me, you\u2019ll never be able to take the throne from the King. "
 --- !u!61 &2093875474
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2337,6 +2443,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 13.918915, y: 21.847446}
   m_EdgeRadius: 0
+--- !u!114 &2093875475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093875469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eddda155bbbcf644b5bedab9fa0ad73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueSpeed: 0.65
+  textDoneAnimating: 0
 --- !u!1001 &2452913604400757710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2480,3 +2600,4 @@ SceneRoots:
   - {fileID: 1529066517}
   - {fileID: 1238432324}
   - {fileID: 1949863763}
+  - {fileID: 1462445128}
