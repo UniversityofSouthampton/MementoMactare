@@ -872,8 +872,9 @@ MonoBehaviour:
     himself.'
   - When you are ready, proceed forward and prepare to fight the first enemy.
   - I will tell you the keys to press, and after a short delay, you will have to
-    press those keys in the same order to attack the enemy.
-  - This will allow you to slip through his defences. Whenever you are ready... continue.
+    press those keys in the same order to attack.
+  - This will allow you to slip through their defences. Whenever you are ready...
+    continue.
 --- !u!61 &1262611190
 BoxCollider2D:
   m_ObjectHideFlags: 0
