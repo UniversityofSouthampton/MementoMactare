@@ -150,6 +150,7 @@ public class KeyGameplay : MonoBehaviour
     {
         string attackToPerform = currentAttack.attacks[attackIndex].ToString();
         PlayerManager.instance.playerAnimatorManager.PlayAttackAnimation(attackToPerform);
+        AudioManager.instance.PlaySound(attackToPerform, volume: 0.5f);
      
     }
     private void PerformEnemyReaction()

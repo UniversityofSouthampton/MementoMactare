@@ -66,6 +66,7 @@ public class GhostManager : MonoBehaviour
             KeyUI.instance.InstantiateNewRow(attackType, isNewAttack: true);
             ////////////////////////////////////// Ghost Attack Animation
             PlayAnimation(attackType.ToString());
+            AudioManager.instance.PlaySound(attackType.ToString(), volume: 0.5f);
             yield return new WaitForSeconds(0.75f);
             attackIndex++;
         }
