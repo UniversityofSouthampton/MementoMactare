@@ -25,12 +25,12 @@ public class SequenceTrigger : MonoBehaviour
     {
         if (string.IsNullOrEmpty(enemyName))
         {
-            keyGameplayScript.StartSpecificSequence(enemyAttackSequence);
+            StartSequence();
             return;
         }
         if (string.IsNullOrEmpty(introDialoguesOfCurrentEnemy))
         {
-            keyGameplayScript.StartSpecificSequence(enemyAttackSequence);
+            StartSequence();
             return;
         }
         DialogueManager.instance.dialogueBox.SetActive(true);
@@ -44,8 +44,14 @@ public class SequenceTrigger : MonoBehaviour
     {
         while (DialogueManager.instance.dialogueBox.activeSelf) yield return null;
 
-        keyGameplayScript.StartSpecificSequence(enemyAttackSequence);
+        StartSequence();
         yield return null;
+    }
+
+    private void StartSequence()
+    {
+        keyGameplayScript.StartSpecificSequence(enemyAttackSequence);
+        GhostManager.instance.StartGhostSequence();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
