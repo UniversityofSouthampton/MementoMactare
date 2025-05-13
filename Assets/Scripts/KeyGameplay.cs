@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
@@ -16,10 +17,7 @@ public class KeyGameplay : MonoBehaviour
     private int currentEnemyId = -1;
     private int currentAttackId = -1;
     private int currentKeyId = 0;
-    [FormerlySerializedAs("canvas")] public GameObject container;
-    public GameObject keyContainerPrefab;
-    private GameObject currentKeyContainer;
-    public GameObject keyPrefab;
+
     [SerializeField] int attackIndex = 0; //used to determine which attack to perform, if a sequence has several attacks. i.e. if this is 0, it performs the first attack. if its 1, it performs the second.
     [SerializeField] private List<AttackType> learnedAttacks;
 
@@ -28,10 +26,7 @@ public class KeyGameplay : MonoBehaviour
 
     [Header("Debug")]
     public bool recallPhase;
-
-    [Header("UI")] 
-    public List<Sprite> attackSprites;
-    public List<Sprite> attackLearnedSprites;
+    
 
     private void Awake()
     {
@@ -47,62 +42,32 @@ public class KeyGameplay : MonoBehaviour
 
     void StartSequence(int attackId)
     {
-        ClearKeys();
+        KeyUI.instance.ClearKeys();
         StartSpecificSequence(attackSequence[attackId]);
     }
     
     public void StartSpecificSequence(Attack attackSequence)
     {
-        ClearKeys();
+        KeyUI.instance.ClearKeys();
+        KeyUI.instance.SetGhostMode(false);
         currentAttack = attackSequence;
         foreach (AttackType attack in currentAttack.attacks)
         {
             currentSequence = "";
             currentSequence += GetKeysForAttack(attack);
-            currentKeyContainer = Instantiate(keyContainerPrefab, container.transform);
 
-            
-            if (!learnedAttacks.Contains(attack))
-            {
-                Debug.Log(attackSprites);
-                currentKeyContainer.transform.GetChild(0).GetComponent<Image>().sprite = attackSprites[(int)attack];
-                currentKeyContainer.transform.GetChild(0).GetComponent<Image>().rectTransform.sizeDelta = new Vector2(100, 100);
-                foreach (char key in GetKeysForAttack(attack))
-                {
-                    SpawnKeyObject(key.ToString());
-                }
-            }
-            else
-            {
-                currentKeyContainer.transform.GetChild(0).GetComponent<Image>().sprite = attackLearnedSprites[(int)attack];
-                currentKeyContainer.transform.GetChild(0).GetComponent<Image>().rectTransform.sizeDelta = new Vector2(35, 35);
-            }
+            KeyUI.instance.InstantiateNewRow(attack, isNewAttack: !learnedAttacks.Contains(attack));
         }
         
         //After all objects are created, start timer
         Invoke("StartRecall", memorisationTime);
     }
-
-    void SpawnKeyObject(string key)
-    {
-        //Create clone of key "template" aka prefab
-        GameObject keyObject = Instantiate(keyPrefab);
-        
-        //Set the parent of the key object to be the KeyContainer
-        keyObject.transform.parent = currentKeyContainer.transform;
-        
-        //Set the text of the keyobject to our specific text
-        keyObject.GetComponentInChildren<TMP_Text>().text = key;
-    }
-
     
     //Called after 3 seconds
     void StartRecall()
     {
-        ClearKeys();
-        currentKeyContainer = container.transform.GetChild(0).gameObject;
-        currentKeyContainer.transform.GetChild(0).GetComponent<Image>().sprite = attackLearnedSprites[(int)currentAttack.attacks[0]];
-        currentKeyContainer.transform.GetChild(0).GetComponent<Image>().rectTransform.sizeDelta = new Vector2(35, 35);
+        KeyUI.instance.ClearKeys();
+        KeyUI.instance.RecallRow(0, currentAttack);
         currentSequence = GetKeysForAttack(currentAttack.attacks[0]);
 
         //Set "RecallPhase" flag to true
@@ -111,26 +76,6 @@ public class KeyGameplay : MonoBehaviour
         recallPhase = true;
         currentAttackId = 0;
         currentKeyId = 0;
-    }
-
-    void ClearKeys(bool clearAll = false)
-    {
-        foreach (Transform keyContainer in container.transform)
-        {
-            //For each child of the KeyContainer object
-            foreach (Transform child in keyContainer)
-            {
-                if (!child.CompareTag("AttackIcon") || clearAll)
-                {
-                    Destroy(child.gameObject);
-                }
-            }
-
-            if (clearAll)
-            {
-                Destroy(keyContainer.gameObject);
-            }
-        }
     }
 
     // Update is called once per frame
@@ -153,7 +98,7 @@ public class KeyGameplay : MonoBehaviour
                 {
                     Debug.Log("CORRECT");
                     //Spawn key object with correct text
-                    SpawnKeyObject(currentSequence[currentKeyId].ToString());
+                    KeyUI.instance.SpawnKeyObject(currentSequence[currentKeyId].ToString());
                     //Add one to the currentKeyId
                     currentKeyId = currentKeyId + 1;
                     if (currentKeyId % 3 == 0)
@@ -169,18 +114,13 @@ public class KeyGameplay : MonoBehaviour
                         {
                             learnedAttacks.Add(currentAttack.attacks[currentAttackId]);
                         }
-                        foreach (Transform key in container.transform.GetChild(currentAttackId).transform)
-                        {
-                            key.GetComponent<Image>().color = Color.green;
-                        }
+                        KeyUI.instance.SetRowGreen(currentAttackId);
                         currentAttackId++;
 
                         if (currentAttackId != currentAttack.attacks.Length)
                         {
                             currentKeyId = 0;
-                            currentKeyContainer = container.transform.GetChild(currentAttackId).gameObject;
-                            currentKeyContainer.transform.GetChild(0).GetComponent<Image>().sprite = attackLearnedSprites[(int)currentAttack.attacks[currentAttackId]];
-                            currentKeyContainer.transform.GetChild(0).GetComponent<Image>().rectTransform.sizeDelta = new Vector2(35, 35);
+                            KeyUI.instance.RecallRow(currentAttackId, currentAttack);
                             currentSequence = GetKeysForAttack(currentAttack.attacks[currentAttackId]);
                             //For each child of the KeyContainer object
                         }
@@ -191,8 +131,7 @@ public class KeyGameplay : MonoBehaviour
                             PlayerManager.instance.playerLocomotionManager.canMove = true; //temporary i think? -JR
                             attackIndex = 0;
 
-                            //Invoke("ClearKeys(clearAll:true)", 1);
-                            ClearKeys(clearAll: true);
+                            KeyUI.instance.ClearKeys(clearAll: true, 0.5f);
                         }
                     }
                 }
@@ -220,7 +159,7 @@ public class KeyGameplay : MonoBehaviour
     }
     public void NextSequence()
     {
-        ClearKeys();
+        KeyUI.instance.ClearKeys();
         currentEnemyId = currentEnemyId + 1;
         if (currentEnemyId < attackSequence.Count)
         {

@@ -196,33 +196,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72f544504a7cee441828ad772043e712, type: 3}
---- !u!1 &321427442 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7454477490128522051, guid: 1c44b3d10d7f54146b85c5963e43c74b, type: 3}
-  m_PrefabInstance: {fileID: 1712457961843958619}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &321427445
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 321427442}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 619857ad51cd5fe49985865f7c4b5971, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &491273520
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,6 +283,74 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 598250160722338377, guid: cce29ea41926d01478e9ba4a1d2ae10b, type: 3}
+      propertyPath: ghostKeyPrefab
+      value: 
+      objectReference: {fileID: 5760362979291603979, guid: 92458b3f34e1739429a937bec25b311d, type: 3}
+    - target: {fileID: 598250160722338377, guid: cce29ea41926d01478e9ba4a1d2ae10b, type: 3}
+      propertyPath: playerKeyPrefab
+      value: 
+      objectReference: {fileID: 5760362979291603979, guid: 92458b3f34e1739429a937bec25b311d, type: 3}
+    - target: {fileID: 598250160722338377, guid: cce29ea41926d01478e9ba4a1d2ae10b, type: 3}
+      propertyPath: keyContainerPrefab
+      value: 
+      objectReference: {fileID: 3060079180894875123, guid: 45ab8b3e9032c654787e9974c8d31cf8, type: 3}
+    - target: {fileID: 598250160722338377, guid: cce29ea41926d01478e9ba4a1d2ae10b, type: 3}
+      propertyPath: attackSprites.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 598250160722338377, guid: cce29ea41926d01478e9ba4a1d2ae10b, type: 3}
+      propertyPath: 'attackSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: 21300000, guid: b3279b26f0ab2f34396e02c8ee6a1ac2, type: 3}
+    - target: {fileID: 598250160722338377, guid: cce29ea41926d01478e9ba4a1d2ae10b, type: 3}
+      propertyPath: 'attackSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 1946eafea2276f8408185230029b608b, type: 3}
+    - target: {fileID: 598250160722338377, guid: cce29ea41926d01478e9ba4a1d2ae10b, type: 3}
+      propertyPath: 'attackSprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: 21300000, guid: fcd14e6b593a81a4695bf191940b3b97, type: 3}
+    - target: {fileID: 598250160722338377, guid: cce29ea41926d01478e9ba4a1d2ae10b, type: 3}
+      propertyPath: 'attackSprites.Array.data[3]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 7fac9d4a62d74364e961a1138908914c, type: 3}
+    - target: {fileID: 598250160722338377, guid: cce29ea41926d01478e9ba4a1d2ae10b, type: 3}
+      propertyPath: 'attackSprites.Array.data[4]'
+      value: 
+      objectReference: {fileID: 21300000, guid: a5b705bf82638aa42a9a9bab0ed578ef, type: 3}
+    - target: {fileID: 598250160722338377, guid: cce29ea41926d01478e9ba4a1d2ae10b, type: 3}
+      propertyPath: 'attackSprites.Array.data[5]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 0e96fdb9c1334d8418e6d91990965f16, type: 3}
+    - target: {fileID: 598250160722338377, guid: cce29ea41926d01478e9ba4a1d2ae10b, type: 3}
+      propertyPath: attackLearnedSprites.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 598250160722338377, guid: cce29ea41926d01478e9ba4a1d2ae10b, type: 3}
+      propertyPath: 'attackLearnedSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: 21300000, guid: a773aa5d50b932c4298e32d28c41ca35, type: 3}
+    - target: {fileID: 598250160722338377, guid: cce29ea41926d01478e9ba4a1d2ae10b, type: 3}
+      propertyPath: 'attackLearnedSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 21300000, guid: bbd4107bcd664bf4da9cb853c6f37333, type: 3}
+    - target: {fileID: 598250160722338377, guid: cce29ea41926d01478e9ba4a1d2ae10b, type: 3}
+      propertyPath: 'attackLearnedSprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 671d65d0c1769a949b4c902c8c3cb01b, type: 3}
+    - target: {fileID: 598250160722338377, guid: cce29ea41926d01478e9ba4a1d2ae10b, type: 3}
+      propertyPath: 'attackLearnedSprites.Array.data[3]'
+      value: 
+      objectReference: {fileID: 21300000, guid: c6049d6ea5ea60f4898181e1943cf246, type: 3}
+    - target: {fileID: 598250160722338377, guid: cce29ea41926d01478e9ba4a1d2ae10b, type: 3}
+      propertyPath: 'attackLearnedSprites.Array.data[4]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 1ca4a3d98a5cb6e42bfe277ed0c59eb6, type: 3}
+    - target: {fileID: 598250160722338377, guid: cce29ea41926d01478e9ba4a1d2ae10b, type: 3}
+      propertyPath: 'attackLearnedSprites.Array.data[5]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 304e1b40126b5d843a58b8590657f7aa, type: 3}
     - target: {fileID: 1608552145461213425, guid: cce29ea41926d01478e9ba4a1d2ae10b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -690,27 +731,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b6211197fbc63a041a822098524ffc34, type: 2}
   - {fileID: 11400000, guid: f1fcb2f3569edf444b59ed83c2340ea1, type: 2}
   - {fileID: 11400000, guid: 5df3e1a9c751bb746aef9412ca2e90dd, type: 2}
-  container: {fileID: 1333049065}
-  keyContainerPrefab: {fileID: 3060079180894875123, guid: 45ab8b3e9032c654787e9974c8d31cf8, type: 3}
-  keyPrefab: {fileID: 5760362979291603979, guid: 92458b3f34e1739429a937bec25b311d, type: 3}
   attackIndex: 0
   learnedAttacks: 
   memorisationTime: 3
   recallPhase: 0
-  attackSprites:
-  - {fileID: 21300000, guid: b3279b26f0ab2f34396e02c8ee6a1ac2, type: 3}
-  - {fileID: 21300000, guid: 1946eafea2276f8408185230029b608b, type: 3}
-  - {fileID: 21300000, guid: fcd14e6b593a81a4695bf191940b3b97, type: 3}
-  - {fileID: 21300000, guid: a5b705bf82638aa42a9a9bab0ed578ef, type: 3}
-  - {fileID: 21300000, guid: 7fac9d4a62d74364e961a1138908914c, type: 3}
-  - {fileID: 21300000, guid: 0e96fdb9c1334d8418e6d91990965f16, type: 3}
-  attackLearnedSprites:
-  - {fileID: 21300000, guid: a773aa5d50b932c4298e32d28c41ca35, type: 3}
-  - {fileID: 21300000, guid: bbd4107bcd664bf4da9cb853c6f37333, type: 3}
-  - {fileID: 21300000, guid: 671d65d0c1769a949b4c902c8c3cb01b, type: 3}
-  - {fileID: 21300000, guid: 1ca4a3d98a5cb6e42bfe277ed0c59eb6, type: 3}
-  - {fileID: 21300000, guid: c6049d6ea5ea60f4898181e1943cf246, type: 3}
-  - {fileID: 21300000, guid: 304e1b40126b5d843a58b8590657f7aa, type: 3}
 --- !u!4 &874553961
 Transform:
   m_ObjectHideFlags: 0
@@ -807,11 +831,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72f544504a7cee441828ad772043e712, type: 3}
---- !u!1 &1333049065 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 53952976152641259, guid: cce29ea41926d01478e9ba4a1d2ae10b, type: 3}
-  m_PrefabInstance: {fileID: 491813207}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1349293608
 GameObject:
   m_ObjectHideFlags: 0
@@ -1830,6 +1849,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 227738669686048093, guid: 1c44b3d10d7f54146b85c5963e43c74b, type: 3}
+      propertyPath: ghostFadeTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2950104377934015347, guid: 1c44b3d10d7f54146b85c5963e43c74b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.53
@@ -1870,6 +1893,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5972543066825047754, guid: 1c44b3d10d7f54146b85c5963e43c74b, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7454477490128522051, guid: 1c44b3d10d7f54146b85c5963e43c74b, type: 3}
       propertyPath: m_Name
       value: Xiang Spirit
@@ -1877,10 +1904,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7454477490128522051, guid: 1c44b3d10d7f54146b85c5963e43c74b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 321427445}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c44b3d10d7f54146b85c5963e43c74b, type: 3}
 --- !u!1001 &1811768547469720236
 PrefabInstance:
