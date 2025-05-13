@@ -23,16 +23,13 @@ public class SequenceTrigger : MonoBehaviour
     }
     void PopulateDialogueManager()
     {
-        if (string.IsNullOrEmpty(enemyName))
+        if (string.IsNullOrEmpty(enemyName) || string.IsNullOrEmpty(introDialoguesOfCurrentEnemy))
         {
-            StartSequence();
+            GhostManager.instance.StartGhostSequence(enemyAttackSequence);
+            StartCoroutine(WaitForGhostSequence());
             return;
         }
-        if (string.IsNullOrEmpty(introDialoguesOfCurrentEnemy))
-        {
-            StartSequence();
-            return;
-        }
+
         DialogueManager.instance.dialogueBox.SetActive(true);
         DialogueManager.instance.SetName(enemyName);
         DialogueManager.instance.SetDialogue(introDialoguesOfCurrentEnemy, settings); //this automatically does the dialogue as well.
@@ -44,14 +41,23 @@ public class SequenceTrigger : MonoBehaviour
     {
         while (DialogueManager.instance.dialogueBox.activeSelf) yield return null;
 
+        GhostManager.instance.StartGhostSequence(enemyAttackSequence);
+        StartCoroutine(WaitForGhostSequence());
+        yield return null;
+    }
+    
+    private IEnumerator WaitForGhostSequence()
+    {
+        while (GhostManager.instance.inSequence) yield return null;
+
         StartSequence();
         yield return null;
     }
 
     private void StartSequence()
     {
+        KeyUI.instance.SetGhostMode(false);
         keyGameplayScript.StartSpecificSequence(enemyAttackSequence);
-        GhostManager.instance.StartGhostSequence();
     }
 
     private void OnTriggerEnter2D(Collider2D other)

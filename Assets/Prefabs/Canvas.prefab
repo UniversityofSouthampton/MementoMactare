@@ -117,7 +117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyContainerPrefab: {fileID: 3060079180894875123, guid: 45ab8b3e9032c654787e9974c8d31cf8, type: 3}
   playerKeyPrefab: {fileID: 5760362979291603979, guid: 92458b3f34e1739429a937bec25b311d, type: 3}
-  ghostKeyPrefab: {fileID: 5760362979291603979, guid: 92458b3f34e1739429a937bec25b311d, type: 3}
+  ghostKeyPrefab: {fileID: 5760362979291603979, guid: 87fb49905efb98e45800e55b57247927, type: 3}
   attackSprites:
   - {fileID: 21300000, guid: b3279b26f0ab2f34396e02c8ee6a1ac2, type: 3}
   - {fileID: 21300000, guid: 1946eafea2276f8408185230029b608b, type: 3}

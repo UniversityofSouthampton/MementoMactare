@@ -60,7 +60,8 @@ public class KeyGameplay : MonoBehaviour
         }
         
         //After all objects are created, start timer
-        Invoke("StartRecall", memorisationTime);
+        //Invoke("StartRecall", memorisationTime);
+        StartRecall();
     }
     
     //Called after 3 seconds

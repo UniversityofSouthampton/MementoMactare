@@ -286,7 +286,7 @@ PrefabInstance:
     - target: {fileID: 598250160722338377, guid: cce29ea41926d01478e9ba4a1d2ae10b, type: 3}
       propertyPath: ghostKeyPrefab
       value: 
-      objectReference: {fileID: 5760362979291603979, guid: 92458b3f34e1739429a937bec25b311d, type: 3}
+      objectReference: {fileID: 5760362979291603979, guid: 87fb49905efb98e45800e55b57247927, type: 3}
     - target: {fileID: 598250160722338377, guid: cce29ea41926d01478e9ba4a1d2ae10b, type: 3}
       propertyPath: playerKeyPrefab
       value: 
@@ -1895,7 +1895,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5972543066825047754, guid: 1c44b3d10d7f54146b85c5963e43c74b, type: 3}
       propertyPath: m_Color.a
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7454477490128522051, guid: 1c44b3d10d7f54146b85c5963e43c74b, type: 3}
       propertyPath: m_Name

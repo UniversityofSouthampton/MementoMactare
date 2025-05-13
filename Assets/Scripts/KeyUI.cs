@@ -106,7 +106,7 @@ public class KeyUI : MonoBehaviour
         GameObject keyObject = Instantiate(ghostMode? ghostKeyPrefab : playerKeyPrefab);
         
         //Set the parent of the key object to be the KeyContainer
-        keyObject.transform.parent = currentKeyRow.transform;
+        keyObject.transform.SetParent(currentKeyRow.transform);
         
         //Set the text of the keyobject to our specific text
         keyObject.GetComponentInChildren<TMP_Text>().text = key;

@@ -11,6 +11,9 @@ public class GhostManager : MonoBehaviour
     private SpriteRenderer ghostSpriteRenderer;
 
     private const float GHOST_FADE_TIME = 0.5f;
+
+    [HideInInspector]
+    public bool inSequence;
     private void Awake()
     {
         if (instance == null)
@@ -36,14 +39,16 @@ public class GhostManager : MonoBehaviour
         
     }
 
-    public void StartGhostSequence()
+    public void StartGhostSequence(Attack attack)
     {
-        StartCoroutine(GhostSequenceCoroutine());
+        StartCoroutine(GhostSequenceCoroutine(attack));
     }
 
-    IEnumerator GhostSequenceCoroutine()
+    IEnumerator GhostSequenceCoroutine(Attack attack)
     {
+        inSequence = true;
         ////////////////////////////////////// Ghost Fade in
+        transform.position = PlayerManager.instance.transform.position;
         float f = 0;
         while (f < 1)
         {
@@ -52,9 +57,18 @@ public class GhostManager : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         f = 1;
-        ////////////////////////////////////// Ghost Show Keys
-        
-        ////////////////////////////////////// Ghost Attack Animation
+
+        int attackIndex = 0;
+        KeyUI.instance.SetGhostMode(true);
+        foreach (AttackType attackType in attack.attacks)
+        {
+            ////////////////////////////////////// Ghost Show Keys
+            KeyUI.instance.InstantiateNewRow(attackType, isNewAttack: true);
+            ////////////////////////////////////// Ghost Attack Animation
+            PlayAnimation(attackType.ToString());
+            yield return new WaitForSeconds(0.75f);
+            attackIndex++;
+        }
 
         ////////////////////////////////////// Ghost Fade Out
         while (f > 0)
@@ -63,8 +77,9 @@ public class GhostManager : MonoBehaviour
             ghostSpriteRenderer.color = new Color(1, 1, 1, f);
             yield return new WaitForEndOfFrame();
         }
-        f = 0;
+        KeyUI.instance.ClearKeys(clearAll: true);
         yield return null;
+        inSequence = false;
     }
 
     private void PlayAnimation(string attackAnimation)
