@@ -908,6 +908,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5972543066825047754, guid: 1c44b3d10d7f54146b85c5963e43c74b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7454477490128522051, guid: 1c44b3d10d7f54146b85c5963e43c74b, type: 3}
       propertyPath: m_Name
       value: Xiang Spirit
