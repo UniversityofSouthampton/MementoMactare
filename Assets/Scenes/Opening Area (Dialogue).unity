@@ -737,7 +737,7 @@ Transform:
   m_GameObject: {fileID: 1200153323}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.6648, y: 10.1677, z: 0}
+  m_LocalPosition: {x: 34.6648, y: 10.03, z: 0}
   m_LocalScale: {x: 9.152352, y: 3.6653593, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -872,8 +872,9 @@ MonoBehaviour:
     himself.'
   - When you are ready, proceed forward and prepare to fight the first enemy.
   - I will tell you the keys to press, and after a short delay, you will have to
-    press those keys in the same order to attack the enemy.
-  - This will allow you to slip through his defences. Whenever you are ready... continue.
+    press those keys in the same order to attack.
+  - This will allow you to slip through their defences. Whenever you are ready...
+    continue.
 --- !u!61 &1262611190
 BoxCollider2D:
   m_ObjectHideFlags: 0
