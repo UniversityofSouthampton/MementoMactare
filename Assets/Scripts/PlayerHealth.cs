@@ -69,6 +69,7 @@ public class PlayerHealth : MonoBehaviour
         
         inGameOverSequence = true;
         PlayerAnimatorManager.instance.PlayAttackAnimation("Defeat");
+        AudioManager.instance.PlaySound("Player Defeated", volume: 0.5f);
         
         //After one second, run "GoToGameOverScene" method
         Invoke("GoToGameOverScene", 1);
@@ -76,6 +77,7 @@ public class PlayerHealth : MonoBehaviour
     void GoToGameOverScene()
     {
         SceneManager.LoadSceneAsync("Game Over");
+        AudioManager.instance.PlaySound("Game Over", volume: 0.5f);
         inGameOverSequence = false;
     }
 }

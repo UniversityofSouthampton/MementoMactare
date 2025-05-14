@@ -75,7 +75,7 @@ public class DialogueManager : MonoBehaviour
             dialogueContainer.maxVisibleCharacters += 1;
             if (char.IsPunctuation(dialogue[i]))
             {
-                yield return new WaitForSeconds(0.4f);
+                yield return new WaitForSeconds(0.25f);
             }
             yield return new WaitForSeconds(textSpeed);
         }

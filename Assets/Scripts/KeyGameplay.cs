@@ -141,6 +141,7 @@ public class KeyGameplay : MonoBehaviour
                 {
                     Debug.Log("INCORRECT");
                     PlayerHealth.instance.InflictDamage(amount: 1);
+                    AudioManager.instance.PlaySound("Player Damaged", volume: 0.5f);
                 }
             }
         }
