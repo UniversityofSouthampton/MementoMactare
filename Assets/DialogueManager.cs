@@ -49,12 +49,17 @@ public class DialogueManager : MonoBehaviour
         if (dialogueCloseTimer > dialogueCloseTime)
         {
             dialogueBox.SetActive(false);
+
+
             dialogueCloseTimer = 0;
         }
     }
     public void SetDialogue(string dialogue, CutsceneSettings settings)
     {
         dialogueContainer.text = dialogue;
+
+        AudioManager.instance?.CheckSFXAlreadyPlaying("Dialogue SFX");
+
         AudioManager.instance.PlaySound("Dialogue SFX", volume: 0.5f);
         if (textAnimationCoroutine == null)
             textAnimationCoroutine = StartCoroutine(TypewriterTextEffect(dialogue, settings));
@@ -79,6 +84,7 @@ public class DialogueManager : MonoBehaviour
             }
             yield return new WaitForSeconds(textSpeed);
         }
+        AudioManager.instance?.CheckSFXAlreadyPlaying("Dialogue SFX");
 
         yield return new WaitForSeconds(2.5f);
 

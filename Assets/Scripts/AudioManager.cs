@@ -25,7 +25,8 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
+        //DontDestroyOnLoad(this.gameObject); //do not put a DontDestroyOnLoad for this audio implementation, if each scene has a unique set of clips.
+
         //load clips into a dictionary for fast-access by clip name
         foreach (AudioClip clip in audioClips)
         {
@@ -33,6 +34,23 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void CheckSFXAlreadyPlaying(string name)
+    {
+        foreach (AudioSource audioSource in gameObject.GetComponents<AudioSource>())
+        {
+            if (audioSource.clip == GetClipFromDictionary(name))
+            {
+                Destroy(audioSource);
+            }
+        }
+    }
+
+    public AudioClip GetClipFromDictionary(string name)
+    {
+        if (clipDictionary.ContainsKey(name)) return clipDictionary[name];
+
+        return null;
+    }
     public void PlaySound(string audioClipName, float volume = 1, float pitch = 1)
     {
         if (!clipDictionary.ContainsKey(audioClipName))
@@ -42,7 +60,15 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        AudioSource source = this.gameObject.AddComponent<AudioSource>();
+        foreach (AudioSource audioSource in gameObject.GetComponents<AudioSource>())
+        {
+            if (audioSource.clip == clipDictionary[audioClipName])
+            {
+                Destroy(audioSource);
+            }
+        }
+
+        AudioSource source = gameObject.AddComponent<AudioSource>();
         source.clip = clipDictionary[audioClipName];
         source.volume = volume;
         source.pitch = pitch;
