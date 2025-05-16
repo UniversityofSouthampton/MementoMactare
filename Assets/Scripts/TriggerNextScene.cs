@@ -9,6 +9,7 @@ public class TriggerNextScene : MonoBehaviour
         {
             int currentSceneNumber = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(currentSceneNumber + 1);
+            AudioManager.instance.PlaySound("Area Transition", volume: 0.5f);
         }
     }
 }

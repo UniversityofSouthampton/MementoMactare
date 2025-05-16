@@ -7,9 +7,10 @@ public class AudioManager : MonoBehaviour
 {
     [SerializeField] private List<AudioClip> audioClips;
 
-    private Dictionary<String, AudioClip> clipDictionary = new Dictionary<string, AudioClip>();
+    [SerializeField] private Dictionary<String, AudioClip> clipDictionary = new Dictionary<string, AudioClip>();
 
     public static AudioManager instance;
+
     private void Awake()
     {
         if (instance == null)
@@ -21,7 +22,7 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
+
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -36,21 +37,17 @@ public class AudioManager : MonoBehaviour
     {
         if (!clipDictionary.ContainsKey(audioClipName))
         {
-            Debug.Log("Clip not found. Make sure it is added on the AudioManager object and the supplied name is correct (case-sensitive)");
+            Debug.Log(
+                "Clip not found. Make sure it is added on the AudioManager object and the supplied name is correct (case-sensitive)");
             return;
         }
+
         AudioSource source = this.gameObject.AddComponent<AudioSource>();
         source.clip = clipDictionary[audioClipName];
         source.volume = volume;
         source.pitch = pitch;
 
         source.Play();
-        Destroy(source, source.clip.length+1);
-        
+        Destroy(source, source.clip.length + 1);
     }
-
-
-
-
-
 }

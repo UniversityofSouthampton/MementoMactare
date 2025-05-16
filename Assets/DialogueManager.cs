@@ -55,7 +55,7 @@ public class DialogueManager : MonoBehaviour
     public void SetDialogue(string dialogue, CutsceneSettings settings)
     {
         dialogueContainer.text = dialogue;
-
+        AudioManager.instance.PlaySound("Dialogue SFX", volume: 0.5f);
         if (textAnimationCoroutine == null)
             textAnimationCoroutine = StartCoroutine(TypewriterTextEffect(dialogue, settings));
     }
