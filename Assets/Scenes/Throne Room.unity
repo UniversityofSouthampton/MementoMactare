@@ -2262,10 +2262,9 @@ MonoBehaviour:
   keyGameplayScript: {fileID: 1074469999}
   enemyAttackSequence: {fileID: 11400000, guid: c76a02c07c0e372418299f1999ef67a6, type: 2}
   enemyName: Han Zhuo
-  introDialoguesOfCurrentEnemy: "Shao! Good to see you after so long. It\u2019s been
-    nineteen years, and you were just a little baby. I sent many men after you in
-    your youth, but you survived them all\u2026 I will have to end things myself
-    here. Say hi to Dad for me, will you?"
+  introDialoguesOfCurrentEnemy: "Shao! Good to see you again. It\u2019s been 19 years,
+    and you were a baby. I sent many men after you in your youth, but you survived\u2026
+    I will have to end things myself. Say hi to your Dad for me, will you?"
 --- !u!61 &1478767892
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -847,10 +847,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 877e99c75ba834542bedbb2bbf1a9d3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: Xiang
   introDialogue:
   - characterName: Xiang
     line: After all this time, my son. You have returned to avenge me.
+  - characterName: Shao
+    line: "Father\u2026? Is that you? It can\u2019t be-"
   - characterName: Xiang
     line: Yes, it is I, Shao. I have returned from Diyu to help you this day.
   - characterName: Xiang
@@ -858,6 +859,8 @@ MonoBehaviour:
   - characterName: Xiang
     line: This is the most important fight of your life, and you will need my help
       to get through it.
+  - characterName: Shao
+    line: How will you be able to help, as just a spirit?
   - characterName: Xiang
     line: With the slight precognition afforded to me in this form, I can assist
       you with the knowledge of how and when to attack.
@@ -865,13 +868,13 @@ MonoBehaviour:
     line: Alone you may not be enough, but together, we could overcome even Kinguang
       himself.
   - characterName: Xiang
-    line: When you are ready, proceed forward and prepare to fight the first enemy.
-  - characterName: Xiang
     line: I will tell you the keys to press, and after a short delay, you will have
       to press those keys in the same order to attack.
   - characterName: Xiang
-    line: This will allow you to slip through their defences. Whenever you are ready...
-      continue.
+    line: The keys are bound to an icon, use those to help you remember the attack.
+  - characterName: Xiang
+    line: This will allow you to slip through the enemy's defences. Whenever you
+      are ready... continue.
 --- !u!61 &1262611190
 BoxCollider2D:
   m_ObjectHideFlags: 0

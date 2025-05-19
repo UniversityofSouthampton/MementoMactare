@@ -166,7 +166,7 @@ public class KeyGameplay : MonoBehaviour
             ? $"{currentEnemyName} {attackToPerform} Reaction"
             : $"{attackToPerform} Reaction";
         Debug.Log(clipName);
-        AudioManager.instance.PlaySound(clipName, volume: 0.8f);
+        AudioManager.instance.PlaySound(clipName, volume: 1.2f);
   
     }
     public void NextSequence()
