@@ -77,7 +77,6 @@ public class PlayerHealth : MonoBehaviour
     void GoToGameOverScene()
     {
         SceneManager.LoadSceneAsync("Game Over");
-        AudioManager.instance.PlaySound("Game Over", volume: 0.5f);
         inGameOverSequence = false;
     }
 }

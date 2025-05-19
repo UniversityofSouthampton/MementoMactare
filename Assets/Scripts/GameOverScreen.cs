@@ -11,6 +11,7 @@ public class GameOverScreen : MonoBehaviour
         if (_blackoutImage.alpha > 0)
         {
             _blackoutImage.alpha -= Time.deltaTime;
+            AudioManager.instance.PlaySound("Game Over", volume: 2f);
         }
     }
 

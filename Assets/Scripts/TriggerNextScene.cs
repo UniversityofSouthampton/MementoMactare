@@ -8,8 +8,8 @@ public class TriggerNextScene : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             int currentSceneNumber = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(currentSceneNumber + 1);
             AudioManager.instance.PlaySound("Area Transition", volume: 0.5f);
+            SceneManager.LoadScene(currentSceneNumber + 1);
         }
     }
 }
