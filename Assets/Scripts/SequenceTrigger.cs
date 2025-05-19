@@ -57,7 +57,7 @@ public class SequenceTrigger : MonoBehaviour
     private void StartSequence()
     {
         KeyUI.instance.SetGhostMode(false);
-        keyGameplayScript.StartSpecificSequence(enemyAttackSequence);
+        keyGameplayScript.StartSpecificSequence(enemyAttackSequence, enemyName);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

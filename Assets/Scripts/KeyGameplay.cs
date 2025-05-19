@@ -26,6 +26,8 @@ public class KeyGameplay : MonoBehaviour
 
     [Header("Debug")]
     public bool recallPhase;
+
+    private string currentEnemyName;
     
 
     private void Awake()
@@ -46,8 +48,9 @@ public class KeyGameplay : MonoBehaviour
         StartSpecificSequence(attackSequence[attackId]);
     }
     
-    public void StartSpecificSequence(Attack attackSequence)
+    public void StartSpecificSequence(Attack attackSequence, string enemyName = "")
     {
+        currentEnemyName = enemyName;
         KeyUI.instance.ClearKeys();
         KeyUI.instance.SetGhostMode(false);
         currentAttack = attackSequence;
@@ -55,8 +58,8 @@ public class KeyGameplay : MonoBehaviour
         {
             currentSequence = "";
             currentSequence += GetKeysForAttack(attack);
-
-            KeyUI.instance.InstantiateNewRow(attack, isNewAttack: !learnedAttacks.Contains(attack));
+            KeyUI.instance.InstantiateNewRow(attack, isNewAttack: false);
+            //KeyUI.instance.InstantiateNewRow(attack, isNewAttack: !learnedAttacks.Contains(attack));
         }
         
         //After all objects are created, start timer
@@ -158,6 +161,12 @@ public class KeyGameplay : MonoBehaviour
     {
         string attackToPerform = currentAttack.reactions[attackIndex].ToString();
         PlayerManager.instance.enemyAnimator.Play(attackToPerform);
+        string clipName = "";
+        clipName = currentEnemyName != ""
+            ? $"{currentEnemyName} {attackToPerform} Reaction"
+            : $"{attackToPerform} Reaction";
+        Debug.Log(clipName);
+        AudioManager.instance.PlaySound(clipName, volume: 0.8f);
   
     }
     public void NextSequence()

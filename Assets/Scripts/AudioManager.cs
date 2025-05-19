@@ -25,7 +25,7 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        //DontDestroyOnLoad(this.gameObject); //do not put a DontDestroyOnLoad for this audio implementation, if each scene has a unique set of clips.
+        DontDestroyOnLoad(this.gameObject); //so level transition audio does not cut out
 
         //load clips into a dictionary for fast-access by clip name
         foreach (AudioClip clip in audioClips)
@@ -60,13 +60,13 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        foreach (AudioSource audioSource in gameObject.GetComponents<AudioSource>())
-        {
-            if (audioSource.clip == clipDictionary[audioClipName])
-            {
-                Destroy(audioSource);
-            }
-        }
+        //foreach (AudioSource audioSource in gameObject.GetComponents<AudioSource>())
+        //{
+            //if (audioSource.clip == clipDictionary[audioClipName])
+            //{
+               // Destroy(audioSource);
+            //}
+        //}
 
         AudioSource source = gameObject.AddComponent<AudioSource>();
         source.clip = clipDictionary[audioClipName];

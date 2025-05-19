@@ -5,6 +5,4 @@ public class Attack : ScriptableObject
 {
     public AttackType[] attacks;
     public AttackReactions[] reactions;
-    public string enemyName;
-
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,10 +6,14 @@ using UnityEngine;
 public class IntroCutscene : MonoBehaviour
 {
     CutsceneSettings settings;
-    [SerializeField] private string characterName;
 
+    [Serializable] public struct DialogueLine
+    {
+        public string characterName;
+        public string line;
+    }
     [Header("Intro Cutscene Dialogue")]
-    [SerializeField] private List<string> introDialogue;
+    [SerializeField] private List<DialogueLine> introDialogue;
 
     private int currentDialogueIndex;
     private bool Triggered;
@@ -38,7 +43,7 @@ public class IntroCutscene : MonoBehaviour
     {
         sequencePlaying = true;
         settings.textDoneAnimating = true;
-        DialogueManager.instance.SetName(characterName);
+        //DialogueManager.instance.SetName(introDialogue[0].characterName);
     }
     void DoIntroDialogue()
     {
@@ -49,7 +54,8 @@ public class IntroCutscene : MonoBehaviour
         if (currentDialogueIndex < introDialogue.Count)
         {
             DialogueManager.instance.dialogueBox.SetActive(true);
-            DialogueManager.instance.SetDialogue(introDialogue[currentDialogueIndex], settings);
+            DialogueManager.instance.SetName(introDialogue[currentDialogueIndex].characterName);
+            DialogueManager.instance.SetDialogue(introDialogue[currentDialogueIndex].line, settings);
             currentDialogueIndex += 1;
         }
         else
