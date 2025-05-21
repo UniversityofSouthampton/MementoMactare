@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -69,8 +70,15 @@ public class DialogueManager : MonoBehaviour
     {
         nameContainer.text = name;
     }
+
+    public void SetCloseTime(int time)
+    {
+        dialogueCloseTime = time;
+        dialogueCloseTimer = 0;
+    }
     private IEnumerator TypewriterTextEffect(string dialogue, CutsceneSettings settings)
     {
+        Debug.Log("Typewriter Coroutine");
         dialogueBox.SetActive(true);
         dialogueCloseTimer = 0;
         dialogueContainer.maxVisibleCharacters = 0;
