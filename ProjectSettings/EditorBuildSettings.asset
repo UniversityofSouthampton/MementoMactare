@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
+    path: Assets/Scenes/Final Cutscene.unity
+    guid: 0f4f34edff01d314cac9e4f96399949c
+  - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 6a916a1a1d77fca46a229cdbaa520202
   - enabled: 1
@@ -29,9 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Throne Room.unity
     guid: 5c6f834baa95ffd45805f1a29727d049
-  - enabled: 1
-    path: Assets/Scenes/Final Cutscene.unity
-    guid: 0f4f34edff01d314cac9e4f96399949c
   - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: 15b9e3f2a94eb364d9a897b7d87076dc

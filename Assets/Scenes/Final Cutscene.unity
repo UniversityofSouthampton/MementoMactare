@@ -149,8 +149,8 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: f04b5651f32250f45a7cb667609b5bbb, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
+  m_InitialState: 0
+  m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
@@ -922,17 +922,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb4d074a7b028d46b51ea4d2414e5e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playableDirector: {fileID: 249877256}
   finalDialogue:
   - characterName: Han Zhuo
     line: "Ack, I guess I underestimated you, Shao. But I know about the non-lethal
       martial artist\u2019s vow you took. Ha! To go through all that, and you\u2019re
       forced to spare your worst enemy, after everything I\u2019ve done\u2026"
-    dialogueLength: 10
+    dialogueLength: 12
   - characterName: Shao Kang
     line: "Tsk, as much as I hate to admit it. You\u2019re right, I swore I\u2019d
       never take a life since that day, but\u2026 I can\u2019t just let you go. You
       took everything from my family, and used your position to torment many others-"
-    dialogueLength: 10
+    dialogueLength: 12
   - characterName: Xiang
     line: Greetings once more, my son.
     dialogueLength: 3
@@ -955,7 +956,7 @@ MonoBehaviour:
   - characterName: Xiang
     line: Remember this, as the future regent of Zenxun, that sometimes you will
       have to kill, not as a martial artist, but as a King!
-    dialogueLength: 6
+    dialogueLength: 8
   - characterName: Shao Kang
     line: "I\u2026 understand, Father. I know what I must do, for the sake of my
       future subjects. Zhuo, this is the end!"

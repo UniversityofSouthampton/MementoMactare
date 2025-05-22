@@ -1,10 +1,13 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class FinalDialogue : MonoBehaviour
 {
     CutsceneSettings settings;
+
+    [SerializeField] private PlayableDirector playableDirector; 
 
     [Serializable] public struct DialogueLine
     {
@@ -18,16 +21,22 @@ public class FinalDialogue : MonoBehaviour
 
     private int dialogueIndex = -1;
     private bool sequencePlaying = false;
-    
+    private bool done = false;
     private void Start()
     {
-        settings = GetComponent<CutsceneSettings>();
-        sequencePlaying = true;
-        settings.textDoneAnimating = true;
     }
 
     private void Update()
     {
+        if (done) return;
+        if (!sequencePlaying)
+        {
+            settings = GetComponent<CutsceneSettings>();
+            sequencePlaying = true;
+            settings.textDoneAnimating = true;
+            playableDirector.Play();
+        }
+        
         if (!sequencePlaying)
             return;
         if (!settings.textDoneAnimating)
@@ -37,12 +46,11 @@ public class FinalDialogue : MonoBehaviour
 
     public void PlayNextDialogue()
     {
-        if (!settings.textDoneAnimating)
-            return;
         settings.textDoneAnimating = false;
         dialogueIndex++;
         if (dialogueIndex == finalDialogue.Count)
         {
+            done = true;
             sequencePlaying = false;
             return;
         }
