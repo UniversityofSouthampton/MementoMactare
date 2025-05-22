@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66d60e76c67f6c34e9e3ccf118e60e66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneId: 8
+  sceneId: 9
 --- !u!82 &249877259
 AudioSource:
   m_ObjectHideFlags: 0
@@ -924,9 +924,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue:
   - characterName: Han Zhuo
-    line: "Ack, I guess I underestimated you, Shao. Yet, I know about the martial
-      artist\u2019s oath you took. Ha! To go through all that, and you\u2019re forced
-      to spare your worst enemy, after everything I\u2019ve done\u2026"
+    line: "Ack, I guess I underestimated you, Shao. But I know about the non-lethal
+      martial artist\u2019s vow you took. Ha! To go through all that, and you\u2019re
+      forced to spare your worst enemy, after everything I\u2019ve done\u2026"
     dialogueLength: 10
   - characterName: Shao Kang
     line: "Tsk, as much as I hate to admit it. You\u2019re right, I swore I\u2019d
@@ -934,7 +934,7 @@ MonoBehaviour:
       took everything from my family, and used your position to torment many others-"
     dialogueLength: 10
   - characterName: Xiang
-    line: '"Greetings once more, my son."'
+    line: Greetings once more, my son.
     dialogueLength: 3
   - characterName: Han Zhuo
     line: Wait, what the?! You're-

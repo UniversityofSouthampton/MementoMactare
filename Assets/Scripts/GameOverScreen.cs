@@ -22,7 +22,7 @@ public class GameOverScreen : MonoBehaviour
         PlayerHealth.instance.ResetHealth();
         
         //Loads scene with id 1 (the one specified in the build profile)
-        SceneManager.LoadSceneAsync(2);
+        SceneManager.LoadSceneAsync(3);
     }
     
     //Called by Exit Button

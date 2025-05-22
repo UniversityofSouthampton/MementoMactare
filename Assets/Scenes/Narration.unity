@@ -483,7 +483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edd55c95f48114f4bb76fedd2d119658, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textSpeed: 0.035
+  textSpeed: 0.04
   text: {fileID: 1714271826}
 --- !u!114 &1714271826
 MonoBehaviour:
@@ -505,13 +505,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Twenty years ago, your father, King Xiang of Zenxun, was killed and overthrown
-    by his most trusted general, Han Zhuo. \n\nHan took the throne and has spent
-    those years ruling the people with an iron fist alongside his loyalists and his
-    sons. \n\nYour mother managed to escape that day and raised you for this day:
-    the day you would reclaim your birthright. \n\nWith the forces of those who hate
-    Zhuo\u2019s rule, it is finally time for you to take back the throne that is
-    rightfully yours. \n\nRise\u2026 Shao Kang."
+  m_text: "Nineteen years ago, your father, King Xiang of Zenxun, was killed and
+    overthrown by his most trusted general, Han Zhuo. \n\nHan took the throne and
+    has spent those years ruling the people with an iron fist alongside his loyalists
+    and his sons. \n\nYour mother managed to escape back then to raise you for this
+    moment: the day you would reclaim your birthright. \n\nWith the forces of those
+    who hate Zhuo\u2019s rule assaulting the castle, it is finally time for you to
+    take back the throne that is rightfully yours. \n\nRise\u2026 Shao Kang."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

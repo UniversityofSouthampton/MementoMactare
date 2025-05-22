@@ -8,7 +8,7 @@ public class TriggerNextScene : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             int currentSceneNumber = SceneManager.GetActiveScene().buildIndex;
-            if (currentSceneNumber != 1)
+            if (currentSceneNumber != 2)
             {
                 AudioManager.instance.PlaySound("Area Transition", volume: 0.5f);
             }
