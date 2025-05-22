@@ -952,7 +952,7 @@ MonoBehaviour:
     line: 'However, consider this a word of advice, not just from me, from all of
       us: In order to truly be the best ruler you can, and to protect your people,
       there will be some threats that will indeed have to be eliminated. '
-    dialogueLength: 8
+    dialogueLength: 10
   - characterName: Xiang
     line: Remember this, as the future regent of Zenxun, that sometimes you will
       have to kill, not as a martial artist, but as a King!
