@@ -2265,7 +2265,7 @@ MonoBehaviour:
   introDialoguesOfCurrentEnemy: "Shao! Good to see you again. It\u2019s been 19 years,
     and you were a baby. I sent many men after you in your youth, but you survived\u2026
     I will have to end things myself. Say hi to your Dad for me, will you?"
-  dialogueLength: 8
+  dialogueLength: 10
 --- !u!61 &1478767892
 BoxCollider2D:
   m_ObjectHideFlags: 0
