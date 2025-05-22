@@ -2773,9 +2773,10 @@ MonoBehaviour:
   keyGameplayScript: {fileID: 1995545772}
   enemyAttackSequence: {fileID: 11400000, guid: 737c7750d12c7864398d08a81b1fd7c0, type: 2}
   enemyName: Throne Room Guard
-  introDialoguesOfCurrentEnemy: "Well, well\u2026 If you\u2019re here,, I suppose
+  introDialoguesOfCurrentEnemy: "Well, well\u2026 If you\u2019re here, I suppose
     your skills can no longer be denied. But if you can\u2019t defeat me, you\u2019ll
     never be able to take the throne from the King. "
+  dialogueLength: 7
 --- !u!61 &2093875474
 BoxCollider2D:
   m_ObjectHideFlags: 0

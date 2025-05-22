@@ -12,6 +12,7 @@ public class SequenceTrigger : MonoBehaviour
     [Header("Enemy Parameters - keep empty unless needed for dialogue")]
     [SerializeField] string enemyName;
     [SerializeField] string introDialoguesOfCurrentEnemy;
+    [SerializeField] int dialogueLength = 8;
 
     private bool Triggered;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -31,6 +32,7 @@ public class SequenceTrigger : MonoBehaviour
         }
 
         DialogueManager.instance.dialogueBox.SetActive(true);
+        DialogueManager.instance.SetCloseTime(dialogueLength);
         DialogueManager.instance.SetName(enemyName);
         DialogueManager.instance.SetDialogue(introDialoguesOfCurrentEnemy, settings); //this automatically does the dialogue as well.
 

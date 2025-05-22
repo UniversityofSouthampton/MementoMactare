@@ -1851,7 +1851,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 581667471197211499, guid: 83d984f311321294faeda7e987deead7, type: 3}
       propertyPath: audioClips.Array.size
-      value: 25
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 581667471197211499, guid: 83d984f311321294faeda7e987deead7, type: 3}
       propertyPath: 'audioClips.Array.data[0]'
@@ -1900,7 +1900,7 @@ PrefabInstance:
     - target: {fileID: 581667471197211499, guid: 83d984f311321294faeda7e987deead7, type: 3}
       propertyPath: 'audioClips.Array.data[11]'
       value: 
-      objectReference: {fileID: 8300000, guid: f36f3c49f8385b84abcf6b0e144f9b3f, type: 3}
+      objectReference: {fileID: 8300000, guid: e65c7a3fc7f5084458e624bebd83aabc, type: 3}
     - target: {fileID: 581667471197211499, guid: 83d984f311321294faeda7e987deead7, type: 3}
       propertyPath: 'audioClips.Array.data[12]'
       value: 
@@ -1956,7 +1956,7 @@ PrefabInstance:
     - target: {fileID: 581667471197211499, guid: 83d984f311321294faeda7e987deead7, type: 3}
       propertyPath: 'audioClips.Array.data[25]'
       value: 
-      objectReference: {fileID: 8300000, guid: fba11c8730df14b48833c8d37b4e4069, type: 3}
+      objectReference: {fileID: 8300000, guid: 3864af7bd958e3942ac7ae7fce2a5be9, type: 3}
     - target: {fileID: 581667471197211499, guid: 83d984f311321294faeda7e987deead7, type: 3}
       propertyPath: 'audioClips.Array.data[26]'
       value: 
@@ -2265,6 +2265,7 @@ MonoBehaviour:
   introDialoguesOfCurrentEnemy: "Shao! Good to see you again. It\u2019s been 19 years,
     and you were a baby. I sent many men after you in your youth, but you survived\u2026
     I will have to end things myself. Say hi to your Dad for me, will you?"
+  dialogueLength: 8
 --- !u!61 &1478767892
 BoxCollider2D:
   m_ObjectHideFlags: 0

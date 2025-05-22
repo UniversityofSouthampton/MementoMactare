@@ -1178,6 +1178,7 @@ MonoBehaviour:
   enemyName: Courtyard Guard
   introDialoguesOfCurrentEnemy: "So, you made it this far, insurgent. Try to get
     past me if you can, but it\u2019s still a long way and a long fight to King Zhuo."
+  dialogueLength: 8
 --- !u!61 &1349293611
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1833,6 +1834,10 @@ PrefabInstance:
       propertyPath: dialogueCloseTime
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8230688624414958172, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: dialogueCloseTimer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 9120781353500186036, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
       propertyPath: m_Name
       value: Dialogue Manager
@@ -1971,6 +1976,7 @@ MonoBehaviour:
   enemyName: Courtyard Guard
   introDialoguesOfCurrentEnemy: "So, you made it this far, insurgent. Try to get
     past me if you can, but it\u2019s still a long way and a long fight to King Zhuo."
+  dialogueLength: 8
 --- !u!1001 &1172795393068094402
 PrefabInstance:
   m_ObjectHideFlags: 0

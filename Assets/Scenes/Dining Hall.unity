@@ -753,6 +753,7 @@ MonoBehaviour:
   enemyName: Malignant Chef
   introDialoguesOfCurrentEnemy: In this world, it's cook or be cooked. I may just
     be a chef, but I will stall you for as long as I can.
+  dialogueLength: 6
 --- !u!61 &490504612
 BoxCollider2D:
   m_ObjectHideFlags: 0

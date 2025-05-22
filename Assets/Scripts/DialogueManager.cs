@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -25,7 +26,15 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            if (SceneManager.GetActiveScene().name == "Final Cutscene")
+            {
+                Destroy(instance.gameObject);
+                instance = this;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
     }
     private void Start()

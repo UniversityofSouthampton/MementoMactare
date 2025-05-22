@@ -17,6 +17,7 @@ public class PlayerHealth : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
     }
 
     [SerializeField] private int maxHealth;
@@ -25,11 +26,20 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private Image healthBarFill;
 
     private bool inGameOverSequence = false;
+
+    void OnLoadScene(Scene scene, LoadSceneMode mode)
+    {
+        if (SceneManager.GetActiveScene().name == "Final Cutscene")
+        {
+            Destroy(gameObject);
+        }
+    }
     
     void Start()
     {
         DontDestroyOnLoad(gameObject);
         _health = maxHealth;
+        SceneManager.sceneLoaded += OnLoadScene;
     }
 
     public void InflictDamage(int amount)
