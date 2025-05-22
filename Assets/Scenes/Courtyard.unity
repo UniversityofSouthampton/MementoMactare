@@ -1274,7 +1274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eddda155bbbcf644b5bedab9fa0ad73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeed: 0.75
+  dialogueSpeed: 0.04
   textDoneAnimating: 0
 --- !u!1 &1613093920
 GameObject:

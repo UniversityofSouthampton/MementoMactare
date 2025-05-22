@@ -2121,8 +2121,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8230688624414958172, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
+      propertyPath: textSpeed
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230688624414958172, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
       propertyPath: dialogueCloseTime
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 9120781353500186036, guid: c659a4b82c264d54ba0678f872c73748, type: 3}
       propertyPath: m_Name
@@ -2835,7 +2839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eddda155bbbcf644b5bedab9fa0ad73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSpeed: 0.65
+  dialogueSpeed: 0.02
   textDoneAnimating: 0
 --- !u!1001 &2452913604400757710
 PrefabInstance:
